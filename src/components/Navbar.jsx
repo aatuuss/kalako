@@ -5,7 +5,6 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isServiceSubMenuOpen, setIsServiceSubMenuOpen] = useState(false)
-  const [isServiceHovered, setIsServiceHovered] = useState(false)
   const location = useLocation()
 
   // Track scroll for sticky glassmorphism effect
@@ -34,9 +33,9 @@ const Navbar = () => {
       path: '/service',
       isDropdown: true,
       subItems: [
-        { label: 'Web & App Development', path: '/service/web-app-development', icon: '💻' },
-        { label: 'Enterprise Resource Planning (ERP)', path: '/service/erp', icon: '📊' },
-        { label: 'Custom Software Development', path: '/service/custom-software-development', icon: '🚀' }
+        { label: 'Web & App Development', path: '/website', icon: '💻' },
+        { label: 'Enterprise Resource Planning (ERP)', path: '/servicem', icon: '📊' },
+        { label: 'Custom Software Development', path: '/cutsomweb', icon: '🚀' }
       ]
     },
     { name: 'contact', label: 'Kontak', path: '/contact' }

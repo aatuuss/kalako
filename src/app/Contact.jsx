@@ -359,7 +359,7 @@ const Contact = () => {
 
             <div className="image-container-ref">
               <div className="maroon-blob"></div>
-              <img src="/img/contact.png" alt="Kalako Contact Team" className="contact-img-ref" />
+              <img src="/img/contact1.png" alt="Kalako Contact Team" className="contact-img-ref" />
             </div>
           </div>
 
