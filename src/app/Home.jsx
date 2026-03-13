@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 const Home = () => {
   const navigate = useNavigate()
+  const { t } = useLanguage()
   const featureSectionRef = useRef(null)
   const [activeService, setActiveService] = useState('web')
   const [openSolution, setOpenSolution] = useState('desain')
@@ -12,32 +14,32 @@ const Home = () => {
     web: {
       key: 'web',
       tabLabel: 'Web & App Development',
-      title: 'Web & Application Development',
+      title: t('Pengembangan Web & Aplikasi', 'Web & Application Development'),
       image: '/img/web.jpg',
       imageAlt: 'Web Development',
-      desc1: 'Solusi berbasis web modern untuk membangun kehadiran digital dan sistem operasional yang scalable.',
-      desc2: 'Kami mengembangkan website dan aplikasi web dengan arsitektur yang aman, responsif, dan optimal untuk performa bisnis.',
+      desc1: t('Solusi berbasis web modern untuk membangun kehadiran digital dan sistem operasional yang scalable.', 'Modern web-based solutions to build digital presence and scalable operational systems.'),
+      desc2: t('Kami mengembangkan website dan aplikasi web dengan arsitektur yang aman, responsif, dan optimal untuk performa bisnis.', 'We build websites and web applications with secure, responsive architecture optimized for business performance.'),
       points: ['Company Profile Website', 'Landing Page']
     },
     erp: {
       key: 'erp',
       tabLabel: 'Enterprise Resource Planning',
-      title: 'ERP System Development',
+      title: t('Pengembangan Sistem ERP', 'ERP System Development'),
       image: '/img/erpsystem.jpg',
       imageAlt: 'ERP System Development',
-      desc1: 'Sistem ERP terintegrasi untuk otomatisasi dan kontrol penuh atas operasional bisnis.',
-      desc2: 'Kami merancang sistem ERP adaptif dan skalabel yang disesuaikan secara khusus dengan proses inti industri Anda.',
-      points: ['Retail Management System', 'Project Base Management System']
+      desc1: t('Sistem ERP terintegrasi untuk otomatisasi dan kontrol penuh atas operasional bisnis.', 'Integrated ERP systems for automation and full control of business operations.'),
+      desc2: t('Kami merancang sistem ERP adaptif dan skalabel yang disesuaikan secara khusus dengan proses inti industri Anda.', 'We design adaptive and scalable ERP systems tailored to your industry core processes.'),
+      points: [t('Sistem Manajemen Retail', 'Retail Management System'), t('Sistem Manajemen Berbasis Proyek', 'Project Base Management System')]
     },
     custom: {
       key: 'custom',
       tabLabel: 'Custom Software Development',
-      title: 'Custom Software Development',
+      title: t('Pengembangan Software Kustom', 'Custom Software Development'),
       image: '/img/custom.jpg',
       imageAlt: 'Custom Software Development',
-      desc1: 'Pengembangan software khusus sesuai kebutuhan unik bisnis Anda.',
-      desc2: 'Kami menghadirkan solusi yang dirancang secara spesifik untuk mendukung proses internal dan otomatisasi operasional.',
-      points: ['Mobile Application']
+      desc1: t('Pengembangan software khusus sesuai kebutuhan unik bisnis Anda.', 'Custom software development tailored to your unique business needs.'),
+      desc2: t('Kami menghadirkan solusi yang dirancang secara spesifik untuk mendukung proses internal dan otomatisasi operasional.', 'We deliver specifically designed solutions to support internal processes and operational automation.'),
+      points: [t('Aplikasi Mobile', 'Mobile Application')]
     }
   }
 
@@ -46,39 +48,39 @@ const Home = () => {
   const solutionItems = [
     {
       key: 'desain',
-      title: 'Desain Website ',
+      title: t('Desain Website', 'Website Design'),
       description:
-        'Kami menyediakan solusi desain dan pengembangan website modern yang membantu bisnis tampil lebih profesional, mudah diakses, dan siap bersaing di era digital.',
+        t('Kami menyediakan solusi desain dan pengembangan website modern yang membantu bisnis tampil lebih profesional, mudah diakses, dan siap bersaing di era digital.', 'We provide modern website design and development solutions that help businesses appear more professional, accessible, and ready to compete in the digital era.'),
       points: [
-        'Website company profile',
-        'Website e-commerce',
-        'Landing page marketing',
-        'Website portal & sistem',
-        'UI/UX modern dan profesional',
-        'Responsive (mobile & tablet friendly)'
+        t('Website company profile', 'Company profile website'),
+        t('Website e-commerce', 'E-commerce website'),
+        t('Landing page marketing', 'Marketing landing page'),
+        t('Website portal & sistem', 'Portal & system website'),
+        t('UI/UX modern dan profesional', 'Modern and professional UI/UX'),
+        t('Responsive (mobile & tablet friendly)', 'Responsive (mobile & tablet friendly)')
       ]
     },
     {
       key: 'erp',
       title: 'ERP System',
       description:
-        'Kami menghadirkan sistem ERP terintegrasi untuk mempermudah pengelolaan keuangan, stok, dan operasional bisnis melalui laporan otomatis dan dashboard real-time yang informatif.',
+        t('Kami menghadirkan sistem ERP terintegrasi untuk mempermudah pengelolaan keuangan, stok, dan operasional bisnis melalui laporan otomatis dan dashboard real-time yang informatif.', 'We provide integrated ERP systems to simplify financial, stock, and business operations management through automated reports and informative real-time dashboards.'),
       points: [
-        'Modul keuangan & akuntansi',
-        'Multi gudang',
-        'Laporan otomatis',
-        'dashboard real-time',
+        t('Modul keuangan & akuntansi', 'Finance & accounting modules'),
+        t('Multi gudang', 'Multi-warehouse support'),
+        t('Laporan otomatis', 'Automated reports'),
+        t('dashboard real-time', 'Real-time dashboard'),
       ]
     },
     {
       key: 'software',
-      title: 'Software',
+      title: t('Software', 'Software'),
       description:
-        'Kami mengembangkan aplikasi web custom dengan dukungan maintenance dan upgrade untuk membantu bisnis melakukan digitalisasi proses secara efektif dan berkelanjutan.',
+        t('Kami mengembangkan aplikasi web custom dengan dukungan maintenance dan upgrade untuk membantu bisnis melakukan digitalisasi proses secara efektif dan berkelanjutan.', 'We develop custom web applications with maintenance and upgrade support to help businesses digitize processes effectively and sustainably.'),
       points: [
-        'Aplikasi web',
-        'Maintenance & upgrade',
-        'Digitalisasi proses bisnis'
+        t('Aplikasi web', 'Web applications'),
+        t('Maintenance & upgrade', 'Maintenance & upgrades'),
+        t('Digitalisasi proses bisnis', 'Business process digitization')
       ]
     }
   ]
@@ -86,62 +88,62 @@ const Home = () => {
   const featureData = {
     dashboard: {
       key: 'dashboard',
-      tabLabel: 'Dashboard Analitik',
-      title: 'Pantau Performa Bisnis Secara Real-Time dalam Satu Dashboard.',
+      tabLabel: t('Dashboard Analitik', 'Analytics Dashboard'),
+      title: t('Pantau Performa Bisnis Secara Real-Time dalam Satu Dashboard.', 'Monitor business performance in real-time in one dashboard.'),
       image: '/img/dashboard.png',
       imageAlt: 'Dashboard Analytics',
-      desc1: 'Satu sistem terintegrasi untuk memonitor stok, penjualan, customer, pemasukan, hingga riwayat transaksi secara akurat dan terpusat.',
+      desc1: t('Satu sistem terintegrasi untuk memonitor stok, penjualan, customer, pemasukan, hingga riwayat transaksi secara akurat dan terpusat.', 'An integrated system to monitor stock, sales, customers, revenue, and transaction history accurately in one place.'),
       points: [
-        'Dilengkapi Grafik & Laporan Otomatiss',
-        'Semua Aktivitas Operasional Terkontrol Penuh.'
+        t('Dilengkapi Grafik & Laporan Otomatiss', 'Equipped with charts & automated reports'),
+        t('Semua Aktivitas Operasional Terkontrol Penuh.', 'All operational activities are fully controlled.')
       ]
     },
     stok: {
       key: 'stok',
-      tabLabel: 'Stok Retail ',
-      title: 'Kontrol Stok dan Kadaluarsa Produk Secara Real-Time.',
+      tabLabel: t('Stok Retail', 'Retail Stock'),
+      title: t('Kontrol Stok dan Kadaluarsa Produk Secara Real-Time.', 'Control stock and product expiry in real-time.'),
       image: '/img/stok.png',
       imageAlt: 'Stok Retail',
-      desc1: 'Satu sistem terintegrasi untuk memantau ketersediaan barang, status stok, harga jual, kategori, hingga notifikasi masa kadaluarsa dalam satu dashboard yang terpusat.',
+      desc1: t('Satu sistem terintegrasi untuk memantau ketersediaan barang, status stok, harga jual, kategori, hingga notifikasi masa kadaluarsa dalam satu dashboard yang terpusat.', 'One integrated system to monitor product availability, stock status, selling prices, categories, and expiry notifications in one centralized dashboard.'),
       points: [
-        'Dilengkapi Filter & Manajemen Produk Lengkap',
-        'Manajemen Inventaris Lebih Terkontrol dan Efisien'
+        t('Dilengkapi Filter & Manajemen Produk Lengkap', 'Complete filters & product management'),
+        t('Manajemen Inventaris Lebih Terkontrol dan Efisien', 'More controlled and efficient inventory management')
       ]
     },
     transaksi: {
       key: 'transaksi',
-      tabLabel: 'Transaksi kasir',
-      title: 'Pemrosesan Transaksi Tingkat Lanjut',
+      tabLabel: t('Transaksi kasir', 'Cashier Transactions'),
+      title: t('Pemrosesan Transaksi Tingkat Lanjut', 'Advanced Transaction Processing'),
       image: '/img/transaksi.png',
       imageAlt: 'Transaksi Kasir',
-      desc1: 'Kelola penjualan dengan pencarian produk instan, pengaturan jumlah dan diskon, perhitungan subtotal otomatis, hingga total belanja yang terupdate secara real-time.',
+      desc1: t('Kelola penjualan dengan pencarian produk instan, pengaturan jumlah dan diskon, perhitungan subtotal otomatis, hingga total belanja yang terupdate secara real-time.', 'Manage sales with instant product search, quantity and discount settings, automatic subtotal calculation, and real-time total updates.'),
       points: [
-        'Perhitungan Otomatis & Kontrol Pembayaran',
-        'Setiap Transaksi Tercatat dan Terkelola dengan Rapi'
+        t('Perhitungan Otomatis & Kontrol Pembayaran', 'Automatic calculation & payment control'),
+        t('Setiap Transaksi Tercatat dan Terkelola dengan Rapi', 'Every transaction is recorded and managed neatly')
       ]
     },
     history: {
       key: 'history',
-      tabLabel: 'History Transaksi',
-      title: 'Pantau Kelola Riwayat Transaksi Secara Detail dan Terstruktur.',
+      tabLabel: t('History Transaksi', 'Transaction History'),
+      title: t('Pantau Kelola Riwayat Transaksi Secara Detail dan Terstruktur.', 'Track and manage transaction history in detail and structure.'),
       image: '/img/history.png',
       imageAlt: 'History Transaksi',
-      desc1: 'Akses seluruh data transaksi berdasarkan rentang tanggal, lengkap dengan informasi kasir, jumlah item, total pembayaran, dan waktu transaksi dalam satu sistem terpusat.',
+      desc1: t('Akses seluruh data transaksi berdasarkan rentang tanggal, lengkap dengan informasi kasir, jumlah item, total pembayaran, dan waktu transaksi dalam satu sistem terpusat.', 'Access all transaction data by date range, complete with cashier info, item count, payment totals, and transaction time in one centralized system.'),
       points: [
-        'Dilengkapi Fitur Filter & Export Data',
-        'Transaksi Tercatat Otomatis dan Diaudit Kapan Saja'
+        t('Dilengkapi Fitur Filter & Export Data', 'Includes filter & data export features'),
+        t('Transaksi Tercatat Otomatis dan Diaudit Kapan Saja', 'Transactions are automatically recorded and auditable anytime')
       ]
     },
     laporan: {
       key: 'laporan',
-      tabLabel: 'Laporan Keuangan',
-      title: 'Pantau Performa Penjualan Bisnis Secara Real-Time.',
+      tabLabel: t('Laporan Keuangan', 'Financial Reports'),
+      title: t('Pantau Performa Penjualan Bisnis Secara Real-Time.', 'Track business sales performance in real-time.'),
       image: '/img/laporan.png',
       imageAlt: 'Laporan Keuangan',
-      desc1: 'Semua data penjualan tersaji dalam satu dashboard mulai dari total transaksi, pendapatan, hingga produk terlaris.',
+      desc1: t('Semua data penjualan tersaji dalam satu dashboard mulai dari total transaksi, pendapatan, hingga produk terlaris.', 'All sales data is presented in one dashboard, from total transactions and revenue to best-selling products.'),
       points: [
-        'Analisis perkembangan bisnis dengan laporan harian, bulanan, dan tahunan yang mudah dipahami.',
-        'Lengkap dengan fitur Export PDF dan Excel untuk mempermudah dokumentasi dan analisis data.'
+        t('Analisis perkembangan bisnis dengan laporan harian, bulanan, dan tahunan yang mudah dipahami.', 'Analyze business growth through easy-to-read daily, monthly, and yearly reports.'),
+        t('Lengkap dengan fitur Export PDF dan Excel untuk mempermudah dokumentasi dan analisis data.', 'Comes with PDF and Excel export features to simplify documentation and data analysis.')
       ]
     }
   }
@@ -674,7 +676,7 @@ const Home = () => {
  
           <div className="hero-content" style={{ width: '48%' }}>
             <span className="animate-fade-in-up" style={{ display: 'inline-block', padding: '8px 16px', backgroundColor: 'var(--erp-primary-light)', color: 'var(--erp-primary)', borderRadius: '100px', fontSize: '13.5px', fontWeight: 700, marginBottom: '24px', letterSpacing: '1px' }}>
-              REVOLUSI DIGITAL & ERP
+              {t('REVOLUSI DIGITAL & ERP', 'DIGITAL REVOLUTION & ERP')}
             </span>
             <h1 className="animate-fade-in-up delay-100" style={{
               fontSize: '64px',
@@ -684,8 +686,8 @@ const Home = () => {
               letterSpacing: '-2px',
               marginBottom: '24px'
             }}>
-              Saatnya Bisnis<br />
-              <span className="text-gradient">Anda Naik Level</span>
+              {t('Saatnya Bisnis', 'It Is Time for Your Business')}<br />
+              <span className="text-gradient">{t('Anda Naik Level', 'to Level Up')}</span>
             </h1>
             <p className="animate-fade-in-up delay-200" style={{
               fontSize: '18px',
@@ -695,20 +697,20 @@ const Home = () => {
               maxWidth: '520px',
               fontWeight: 400
             }}>
-              Sederhanakan kompleksitas bisnis Anda dengan solusi Enterprise Resource Planning (ERP) mutakhir yang dirancang untuk skala dan efisiensi jangka panjang.
+              {t('Sederhanakan kompleksitas bisnis Anda dengan solusi Enterprise Resource Planning (ERP) mutakhir yang dirancang untuk skala dan efisiensi jangka panjang.', 'Simplify your business complexity with advanced Enterprise Resource Planning (ERP) solutions designed for scale and long-term efficiency.')}
             </p>
             <div className="btn-group animate-fade-in-up delay-300" style={{ display: 'flex', gap: '18px' }}>
               <button
                 className="btn-primary"
                 onClick={() => featureSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               >
-                Mulai Eksplorasi Fitur
+                {t('Mulai Eksplorasi Fitur', 'Start Exploring Features')}
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </button>
-              <button className="btn-outline" onClick={() => navigate('/contact')}>Dapatkan Solusi</button>
+              <button className="btn-outline" onClick={() => navigate('/contact')}>{t('Dapatkan Solusi', 'Get a Solution')}</button>
             </div>
           </div>
  
@@ -737,9 +739,9 @@ const Home = () => {
       <section className="section-padding" style={{ backgroundColor: 'var(--erp-bg)', marginTop: '-84px' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '50px' }} className="animate-fade-in-up">
-            <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--erp-primary)', letterSpacing: '1px', textTransform: 'uppercase' }}>Our Service</span>
+            <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--erp-primary)', letterSpacing: '1px', textTransform: 'uppercase' }}>{t('Layanan Kami', 'Our Service')}</span>
             <h2 style={{ fontSize: '36px', fontWeight: 800, color: 'var(--erp-dark)', margin: '16px auto', maxWidth: '800px', lineHeight: 1.3 }}>
-              Temukan solusi teknologi yang tepat untuk <br /> <span className="text-gradient">pertumbuhan bisnis Anda</span>
+              {t('Temukan solusi teknologi yang tepat untuk', 'Find the right technology solutions for')} <br /> <span className="text-gradient">{t('pertumbuhan bisnis Anda', 'your business growth')}</span>
             </h2>
           </div>
 
@@ -788,7 +790,7 @@ const Home = () => {
               </div>
 
               <button className="btn-primary" style={{ padding: '12px 28px', fontSize: '14.5px' }}>
-                Pelajari Selengkapnya
+                {t('Pelajari Selengkapnya', 'Learn More')}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </button>
             </div>
@@ -806,7 +808,7 @@ const Home = () => {
               Solusi <span className="text-gradient">ERP</span><br />
             </h2>
             <p style={{ fontSize: '16px', color: '#666', lineHeight: 1.7, marginBottom: '30px' }}>
-              Fitur Solusi menyediakan layanan pengembangan website, sistem ERP, dan software khusus untuk membantu bisnis meningkatkan efisiensi dan produktivitas melalui sistem terintegrasi, modern, dan scalable.
+              {t('Fitur Solusi menyediakan layanan pengembangan website, sistem ERP, dan software khusus untuk membantu bisnis meningkatkan efisiensi dan produktivitas melalui sistem terintegrasi, modern, dan scalable.', 'Our solution features provide website development, ERP systems, and custom software services to help businesses improve efficiency and productivity through integrated, modern, and scalable systems.')}
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -885,7 +887,7 @@ const Home = () => {
                   textTransform: 'uppercase',
                   backdropFilter: 'blur(5px)'
                 }}>
-                  Solusi Masa Depan Bisnis Anda
+                  {t('Solusi Masa Depan Bisnis Anda', 'Your Future Business Solution')}
                 </span>
                 <h3 style={{
                   fontSize: '28px',
@@ -896,7 +898,7 @@ const Home = () => {
                   letterSpacing: '-1.1px',
                   textShadow: '0 10px 30px rgba(0,0,0,0.1)'
                 }}>
-                  Bawa Perusahaan Anda ke <span style={{ color: '#f2da00', textShadow: '0 0 20px rgba(242, 218, 0, 0.3)' }}>Level Tertinggi.</span>
+                  {t('Bawa Perusahaan Anda ke', 'Take Your Company to the')} <span style={{ color: '#f2da00', textShadow: '0 0 20px rgba(242, 218, 0, 0.3)' }}>{t('Level Tertinggi.', 'Highest Level.')}</span>
                 </h3>
                 <p style={{
                   fontSize: '14px',
@@ -906,7 +908,7 @@ const Home = () => {
                   fontWeight: 400,
                   maxWidth: '380px'
                 }}>
-                  Jangan biarkan sistem lama menghambat pertumbuhan. Konsultasikan transformasi digital Anda dengan tim ahli kami secara gratis hari ini.
+                  {t('Jangan biarkan sistem lama menghambat pertumbuhan. Konsultasikan transformasi digital Anda dengan tim ahli kami secara gratis hari ini.', 'Do not let legacy systems slow your growth. Consult your digital transformation with our experts for free today.')}
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap' }}>
                   <button style={{
@@ -924,7 +926,7 @@ const Home = () => {
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px) scale(1.03)'; e.currentTarget.style.boxShadow = '0 20px 45px rgba(0,0,0,0.25)' }}
                     onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0) scale(1)'; e.currentTarget.style.boxShadow = '0 15px 35px rgba(0,0,0,0.2)' }}
                     onClick={() => window.location.href = '/contact'}>
-                    Jadwalkan Konsultasi Gratis
+                    {t('Jadwalkan Konsultasi Gratis', 'Schedule a Free Consultation')}
                   </button>
                   <Link to="/about" style={{
                     color: '#ffffff',
@@ -936,7 +938,7 @@ const Home = () => {
                     gap: '8px',
                     transition: 'all 0.3s'
                   }} onMouseEnter={e => e.currentTarget.style.transform = 'translateX(5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateX(0)'}>
-                    Pelajari Metode Kami
+                    {t('Pelajari Metode Kami', 'Learn Our Method')}
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                   </Link>
                 </div>
@@ -954,8 +956,8 @@ const Home = () => {
         <div className="container">
 
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '38px', fontWeight: 800, color: 'var(--erp-dark)', marginBottom: '16px' }}>Fitur & Menu Kalako Retail</h2>
-            <p style={{ fontSize: '16px', color: '#666', maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>Kami menyediakan berbagai Fitur yang mudah anda gunakan dalam mengelola sistem kasir</p>
+            <h2 style={{ fontSize: '38px', fontWeight: 800, color: 'var(--erp-dark)', marginBottom: '16px' }}>{t('Fitur & Menu Kalako Retail', 'Kalako Retail Features & Menus')}</h2>
+            <p style={{ fontSize: '16px', color: '#666', maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>{t('Kami menyediakan berbagai Fitur yang mudah anda gunakan dalam mengelola sistem kasir', 'We provide various features that are easy to use for managing cashier systems')}</p>
           </div>
 
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginBottom: '40px', flexWrap: 'wrap' }}>
@@ -980,7 +982,7 @@ const Home = () => {
             </div>
 
             <div className="card-content-side" style={{ flex: 1 }}>
-              <span style={{ display: 'inline-block', padding: '7px 15px', backgroundColor: 'rgba(99,3,48,0.06)', color: 'var(--erp-primary)', borderRadius: '30px', fontSize: '12.5px', fontWeight: 800, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.8px', border: '1px solid rgba(99,3,48,0.1)' }}>Modul {activeFeatureCard.tabLabel}</span>
+              <span style={{ display: 'inline-block', padding: '7px 15px', backgroundColor: 'rgba(99,3,48,0.06)', color: 'var(--erp-primary)', borderRadius: '30px', fontSize: '12.5px', fontWeight: 800, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.8px', border: '1px solid rgba(99,3,48,0.1)' }}>{t('Modul', 'Module')} {activeFeatureCard.tabLabel}</span>
               <h3 style={{ fontSize: '34px', fontWeight: 900, color: 'var(--erp-dark)', marginBottom: '20px', lineHeight: 1.2, letterSpacing: '-0.5px' }}>{activeFeatureCard.title}</h3>
               <p style={{ fontSize: '17px', color: '#5a6b82', lineHeight: 1.7, marginBottom: '36px' }}>{activeFeatureCard.desc1}</p>
 

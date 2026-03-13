@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 const iconWrapStyle = {
   width: '22px',
@@ -75,6 +76,8 @@ const WhatsAppIcon = () => (
 )
 
 const Footer = () => {
+  const { t } = useLanguage()
+
   return (
     <footer
       style={{
@@ -181,26 +184,26 @@ const Footer = () => {
 
           <div>
             <h3 style={{ margin: '8px 0 14px', fontSize: '22px', lineHeight: '1.2', color: '#111111', fontWeight: 700 }}>
-              About Us
+              {t('Tentang Kami', 'About Us')}
             </h3>
             <Link to="/Contact" style={textLinkStyle}>
-              Contact Us
+              {t('Hubungi Kami', 'Contact Us')}
             </Link>
           </div>
 
           <div>
             <h3 style={{ margin: '8px 0 14px', fontSize: '22px', lineHeight: '1.2', color: '#111111', fontWeight: 700 }}>
-              Our Services
+              {t('Layanan Kami', 'Our Services')}
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <Link to="/Service" style={textLinkStyle}>
-                Servis ERP System
+                {t('Layanan Sistem ERP', 'ERP System Service')}
               </Link>
               <Link to="/Website" style={textLinkStyle}>
-                Servis Website Development
+                {t('Layanan Pengembangan Website', 'Website Development Service')}
               </Link>
               <Link to="/Customweb" style={textLinkStyle}>
-                Servis Custom Software Development
+                {t('Layanan Pengembangan Software Kustom', 'Custom Software Development Service')}
               </Link>
             </div>
           </div>
@@ -210,7 +213,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p style={{ margin: 0, color: '#141414', fontSize: '14px', lineHeight: '1.5' }}>
-            © 2026 PT. Karya Mulya Korpora. All Rights Reserved.
+            {t('© 2026 PT. Karya Mulya Korpora. Semua Hak Dilindungi.', '© 2026 PT. Karya Mulya Korpora. All Rights Reserved.')}
           </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

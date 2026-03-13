@@ -9,6 +9,7 @@ import Contact from './app/Contact'
 import Footer from './components/Footer'
 import Website from './app/Website'
 import Customweb from './app/Customweb'
+import { LanguageProvider } from './context/LanguageContext'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -22,22 +23,24 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/servicem" element={<Service />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/website" element={<Website /> } />
-        <Route path="/customweb" element={<Customweb />} />
-        <Route path="/cutsomweb" element={<Customweb />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/servicem" element={<Service />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/website" element={<Website /> } />
+          <Route path="/customweb" element={<Customweb />} />
+          <Route path="/cutsomweb" element={<Customweb />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </LanguageProvider>
   )
 }
 

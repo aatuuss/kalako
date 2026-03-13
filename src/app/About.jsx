@@ -1,6 +1,9 @@
 import React from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 const About = () => {
+  const { t } = useLanguage()
+
   return (
     <>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -225,7 +228,7 @@ const About = () => {
               {/* Right Side - Content (Moves to Top on Mobile) */}
               <div className="flex-1 animate-fade-in-up">
                 <span className="section-tag" style={{ background: 'var(--erp-primary-light)', color: 'var(--erp-primary)' }}>
-                  IDENTITAS PERUSAHAAN
+                  {t('IDENTITAS PERUSAHAAN', 'COMPANY IDENTITY')}
                 </span>
                 <h2 className="section-title" style={{
                   fontSize: '52px',
@@ -235,8 +238,8 @@ const About = () => {
                   letterSpacing: '-1px',
                   marginBottom: '30px'
                 }}>
-                  Lebih Dari Sekadar <br />
-                  <span className="text-gradient">Pengembang IT</span>
+                  {t('Lebih Dari Sekadar', 'More Than Just')} <br />
+                  <span className="text-gradient">{t('Pengembang IT', 'IT Developers')}</span>
                 </h2>
 
                 <p style={{
@@ -246,7 +249,7 @@ const About = () => {
                   marginBottom: '20px',
                   textAlign: 'justify'
                 }}>
-                  <strong style={{ color: 'var(--erp-primary)', fontWeight: 700 }}>PT. Karya Mulya Korpora</strong> adalah pionir teknologi Software House & IT Solution yang berfokus pada arsitektur perangkat lunak skalabilitas tinggi. Kami mengotomatisasi kerumitan operasional melalui ekosistem Website Enterprise, ERP (Enterprise Resource Planning), dan Custom Software spesifik industri.
+                  {t('PT. Karya Mulya Korpora adalah pionir teknologi Software House & IT Solution yang berfokus pada arsitektur perangkat lunak skalabilitas tinggi. Kami mengotomatisasi kerumitan operasional melalui ekosistem Website Enterprise, ERP (Enterprise Resource Planning), dan Custom Software spesifik industri.', 'PT. Karya Mulya Korpora is a technology pioneer in Software House & IT Solutions focused on high-scalability software architecture. We automate operational complexity through an Enterprise Website, ERP (Enterprise Resource Planning), and industry-specific Custom Software ecosystem.')}
                 </p>
                 <p style={{
                   fontSize: '17px',
@@ -254,7 +257,7 @@ const About = () => {
                   lineHeight: 1.8,
                   textAlign: 'justify'
                 }}>
-                  Kami memberdayakan UMKM hingga korporasi multinasional dengan infrastruktur digital yang aman, cerdas, dan responsif. Memastikan setiap klien memiliki keunggulan kompetitif yang nyata.
+                  {t('Kami memberdayakan UMKM hingga korporasi multinasional dengan infrastruktur digital yang aman, cerdas, dan responsif. Memastikan setiap klien memiliki keunggulan kompetitif yang nyata.', 'We empower SMEs to multinational corporations with secure, intelligent, and responsive digital infrastructure, ensuring every client gains a real competitive advantage.')}
                 </p>
               </div>
 
@@ -277,7 +280,7 @@ const About = () => {
                       fontWeight: 500,
                       letterSpacing: '0.2px'
                     }}>
-                      "Menghubungkan proses manajerial yang rumit ke dalam satu sistem interface cerdas yang elegan dan mudah dikendalikan."
+                      {t('"Menghubungkan proses manajerial yang rumit ke dalam satu sistem interface cerdas yang elegan dan mudah dikendalikan."', '"Connecting complex managerial processes into one smart, elegant, and easy-to-control interface system."')}
                     </p>
                   </div>
                 </div>
@@ -299,13 +302,13 @@ const About = () => {
 
               {/* Vision Content */}
               <div className="flex-1 nav-card animate-fade-in-up">
-                <span style={{ fontSize: '14px', fontWeight: 700, color: '#aaa', letterSpacing: '2px', textTransform: 'uppercase' }}>Idealisme Perusahaan</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: '#aaa', letterSpacing: '2px', textTransform: 'uppercase' }}>{t('Idealisme Perusahaan', 'Company Idealism')}</span>
                 <h2 style={{ fontSize: '42px', fontWeight: 800, color: 'var(--erp-dark)', margin: '15px 0 25px', lineHeight: 1.1 }}>
                   Our <span className="text-gradient">Vision</span>
                 </h2>
                 <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--erp-primary)', borderRadius: '2px', marginBottom: '30px' }}></div>
                 <p style={{ fontSize: '17px', color: '#555', lineHeight: 1.8, margin: 0, textAlign: 'justify' }}>
-                  Menjadi penyedia solusi arsitektur teknologi terpercaya secara global. Kami berdedikasi menghadirkan sistem ERP, Website Application, dan Custom Software terintegrasi untuk membantu bisnis berakselerasi, terukur akurat, serta bertumbuh berkelanjutan di era komputasi modern.
+                  {t('Menjadi penyedia solusi arsitektur teknologi terpercaya secara global. Kami berdedikasi menghadirkan sistem ERP, Website Application, dan Custom Software terintegrasi untuk membantu bisnis berakselerasi, terukur akurat, serta bertumbuh berkelanjutan di era komputasi modern.', 'To become a globally trusted technology architecture solution provider. We are dedicated to delivering integrated ERP systems, Website Applications, and Custom Software to help businesses accelerate, measure accurately, and grow sustainably in the modern computing era.')}
                 </p>
               </div>
 
@@ -324,7 +327,7 @@ const About = () => {
 
               {/* Mission Content */}
               <div className="flex-1 nav-card animate-fade-in-up delay-100">
-                <span style={{ fontSize: '14px', fontWeight: 700, color: '#aaa', letterSpacing: '2px', textTransform: 'uppercase' }}>Dedikasi Operasional</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: '#aaa', letterSpacing: '2px', textTransform: 'uppercase' }}>{t('Dedikasi Operasional', 'Operational Dedication')}</span>
                 <h2 style={{ fontSize: '42px', fontWeight: 800, color: 'var(--erp-dark)', margin: '15px 0 25px', lineHeight: 1.1 }}>
                   Our <span className="text-gradient">Mission</span>
                 </h2>
@@ -335,7 +338,7 @@ const About = () => {
                       <span style={{ color: 'var(--erp-primary)', fontWeight: 800 }}>01</span>
                     </div>
                     <p style={{ fontSize: '16.5px', color: '#555', lineHeight: 1.7, margin: 0, paddingTop: '6px' }}>
-                      Merekayasa solusi perangkat lunak yang dirancang berstandar profesional, memiliki arsitektur dinamis (scalable), serta kepatuhan mutlak pada protokol keamanan data enterprise.
+                      {t('Merekayasa solusi perangkat lunak yang dirancang berstandar profesional, memiliki arsitektur dinamis (scalable), serta kepatuhan mutlak pada protokol keamanan data enterprise.', 'Engineer software solutions with professional standards, dynamic (scalable) architecture, and full compliance with enterprise data security protocols.')}
                     </p>
                   </li>
                   <li style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
@@ -343,7 +346,7 @@ const About = () => {
                       <span style={{ color: 'var(--erp-primary)', fontWeight: 800 }}>02</span>
                     </div>
                     <p style={{ fontSize: '16.5px', color: '#555', lineHeight: 1.7, margin: 0, paddingTop: '6px' }}>
-                      Mendistribusikan sistem ERP yang aplikatif, intuitif (*user-friendly*), & terjangkau guna mendukung revolusi efisiensi operasional bagi entitas korporat maupun bisnis UMKM progresif.
+                      {t('Mendistribusikan sistem ERP yang aplikatif, intuitif (*user-friendly*), & terjangkau guna mendukung revolusi efisiensi operasional bagi entitas korporat maupun bisnis UMKM progresif.', 'Deliver practical, intuitive (user-friendly), and affordable ERP systems to support an operational efficiency revolution for corporate entities and progressive SMEs.')}
                     </p>
                   </li>
                 </ul>

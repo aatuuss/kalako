@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isServiceSubMenuOpen, setIsServiceSubMenuOpen] = useState(false)
   const location = useLocation()
+  const { language, toggleLanguage, t } = useLanguage()
 
   // Track scroll for sticky glassmorphism effect
   useEffect(() => {
@@ -25,11 +27,11 @@ const Navbar = () => {
   }, [location.pathname])
 
   const links = [
-    { name: 'home', label: 'Beranda', path: '/home' },
-    { name: 'about', label: 'Tentang', path: '/about' },
+    { name: 'home', label: t('Beranda', 'Home'), path: '/home' },
+    { name: 'about', label: t('Tentang', 'About'), path: '/about' },
     { 
       name: 'service', 
-      label: 'Layanan', 
+      label: t('Layanan', 'Services'), 
       path: '/service',
       isDropdown: true,
       subItems: [
@@ -38,7 +40,7 @@ const Navbar = () => {
         { label: 'Custom Software Development', path: '/cutsomweb', icon: '🚀' }
       ]
     },
-    { name: 'contact', label: 'Kontak', path: '/contact' }
+    { name: 'contact', label: t('Kontak', 'Contact'), path: '/contact' }
   ]
 
   const isActive = (path) => location.pathname === path
@@ -448,11 +450,12 @@ const Navbar = () => {
                 borderRadius: '8px',
                 transition: 'background-color 0.2s ease'
               }}
+              onClick={toggleLanguage}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f7fafc'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
             >
               <span style={{ fontSize: '16px' }}>🌐</span>
-              <span>ID</span>
+              <span>{language === 'id' ? 'ID' : 'EN'}</span>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '2px' }}>
                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -485,7 +488,7 @@ const Navbar = () => {
                   e.currentTarget.style.boxShadow = '0 8px 25px rgba(99, 3, 48, 0.25)'
                 }}
               >
-                Hubungi Kami
+                {t('Hubungi Kami', 'Contact Us')}
               </button>
             </Link>
           </div>
@@ -571,7 +574,7 @@ const Navbar = () => {
                     cursor: 'pointer'
                   }}
                 >
-                  Hubungi Kami
+                  {t('Hubungi Kami', 'Contact Us')}
                 </button>
               </Link>
             </div>

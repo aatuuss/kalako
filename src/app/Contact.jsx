@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 const Contact = () => {
+  const { t } = useLanguage()
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,7 +24,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
-    alert('Pesan Anda telah dikirim! Tim kami akan segera menghubungi Anda.')
+    alert(t('Pesan Anda telah dikirim! Tim kami akan segera menghubungi Anda.', 'Your message has been sent! Our team will contact you shortly.'))
     setFormData({
       firstName: '',
       lastName: '',
@@ -302,19 +305,19 @@ const Contact = () => {
 
           {/* Sisi Kiri: Form & Info */}
           <div className="left-column">
-            <h1>Contact us</h1>
+            <h1>{t('Hubungi Kami', 'Contact Us')}</h1>
             <p className="intro-text">
-              Hubungi kami untuk kasus apapun yang terhubung dengan perusahaan atau layanan kami. Kami akan secepatnya dan sebisa mungkin membantu Anda.
+              {t('Hubungi kami untuk kasus apapun yang terhubung dengan perusahaan atau layanan kami. Kami akan secepatnya dan sebisa mungkin membantu Anda.', 'Contact us for anything related to our company or services. We will help you as quickly and as best as we can.')}
             </p>
 
             <form onSubmit={handleSubmit}>
               <div className="form-grid-ref">
                 <div className="form-group-ref">
-                  <label>First name *</label>
+                  <label>{t('Nama depan *', 'First name *')}</label>
                   <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />
                 </div>
                 <div className="form-group-ref">
-                  <label>Last name *</label>
+                  <label>{t('Nama belakang *', 'Last name *')}</label>
                   <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required />
                 </div>
                 <div className="form-group-ref">
@@ -322,7 +325,7 @@ const Contact = () => {
                   <input type="email" name="email" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div className="form-group-ref">
-                  <label>Nomor Telepon</label>
+                  <label>{t('Nomor Telepon', 'Phone Number')}</label>
                   <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
                 </div>
                 <div className="form-group-ref full-width">
@@ -330,17 +333,17 @@ const Contact = () => {
                   <textarea name="subject" value={formData.subject} onChange={handleChange} rows="6" required></textarea>
                 </div>
               </div>
-              <button type="submit" className="btn-kirim">Kirim</button>
+              <button type="submit" className="btn-kirim">{t('Kirim', 'Send')}</button>
             </form>
 
             <div className="the-office">
-              <h2>The Office</h2>
+              <h2>{t('Kantor Kami', 'The Office')}</h2>
               <div className="office-info-item">
-                <strong>Tempat</strong>
+                <strong>{t('Tempat', 'Address')}</strong>
                 <span>Jl. Mayang No.08, Bunulrejo, Kec. Blimbing, Kota Malang, Jawa Timur 65123</span>
               </div>
               <div className="office-info-item">
-                <strong>Telp</strong>
+                <strong>{t('Telp', 'Phone')}</strong>
                 <span>+62-851-1710-1207</span>
               </div>
               <div className="office-info-item">
@@ -353,8 +356,8 @@ const Contact = () => {
           {/* Sisi Kanan: Visual */}
           <div className="right-column">
             <div className="greeting-text">
-              <h3>Hubungi Kami</h3>
-              <h2>Diskusikan kebutuhan bisnis Anda dengan kami</h2>
+              <h3>{t('Hubungi Kami', 'Contact Us')}</h3>
+              <h2>{t('Diskusikan kebutuhan bisnis Anda dengan kami', 'Discuss your business needs with us')}</h2>
             </div>
 
             <div className="image-container-ref">
