@@ -1,0 +1,5 @@
+/* App-level styles (navbar moved to inline styles) */
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
