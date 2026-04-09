@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
-import { useLanguage } from '../context/LanguageContext';
 
 const Website = () => {
-	const { t } = useLanguage();
-
 	useEffect(() => {
 		const els = document.querySelectorAll('.anim-el');
 		if (!els.length) return;
@@ -319,11 +316,11 @@ const Website = () => {
 								letterSpacing: '-0.7px',
 							}}
 						>
-							{t('Layanan Website', 'Website Services')}
+							Layanan Website
 							<br />
-							{t('Moderen', 'Modern')}
+							Moderen
 							<br />
-							{t('Perusahaan Kami', 'for Your Company')}
+							Perusahaan Kami
 						</h1>
 
 						<button
@@ -349,7 +346,7 @@ const Website = () => {
 								cursor: 'pointer',
 							}}
 						>
-							<span>{t('Lihat Selengkapnya', 'See More')}</span>
+							<span>Lihat Selengkapnya</span>
 							<span style={{ fontSize: '15px', lineHeight: 0.8 }}>{'>'}</span>
 						</button>
 					</div>
@@ -380,9 +377,9 @@ const Website = () => {
 								fontWeight: 600,
 							}}
 						>
-							{t('Layanan', 'Service')}
+							Layanan
 							<br />
-							{t('Website Kami', 'Website')}
+							Website Kami
 						</div>
 						<div
 							style={{
@@ -462,8 +459,8 @@ const Website = () => {
 								letterSpacing: '-0.5px'
 							}}
 						>
-							{t('Bangun Website Profesional untuk Meningkatkan', 'Build a Professional Website to Improve')}<br />
-							{t('Branding', 'Branding')}
+							Bangun Website Profesional untuk Meningkatkan<br />
+							Branding
 						</h2>
 						<p
 							className="website-section-desc"
@@ -475,7 +472,9 @@ const Website = () => {
 								margin: 0,
 							}}
 						>
-							{t('Website Development adalah layanan pembuatan website modern, responsif, dan teroptimasi SEO yang membantu membangun identitas digital, meningkatkan kredibilitas, menjangkau lebih banyak pelanggan, serta mendukung pertumbuhan bisnis secara berkelanjutan.', 'Website Development is a modern, responsive, SEO-optimized website creation service that helps build digital identity, increase credibility, reach more customers, and support sustainable business growth.')}
+							Website Development adalah layanan pembuatan website modern, responsif, dan teroptimasi SEO
+							yang membantu membangun identitas digital, meningkatkan kredibilitas, menjangkau lebih
+							banyak pelanggan, serta mendukung pertumbuhan bisnis secara berkelanjutan.
 						</p>
 					</div>
 
@@ -520,7 +519,8 @@ const Website = () => {
 									margin: '0 0 auto',
 								}}
 							>
-								{t('Konsultasikan kebutuhan Anda sekarang dan wujudkan website profesional yang siap meningkatkan kredibilitas serta pertumbuhan bisnis Anda.', 'Consult your needs now and build a professional website ready to improve your credibility and business growth.')}
+								Konsultasikan kebutuhan Anda sekarang dan wujudkan website profesional yang
+								siap meningkatkan kredibilitas serta pertumbuhan bisnis Anda.
 							</p>
 
 							<hr
@@ -540,7 +540,7 @@ const Website = () => {
 									margin: '0 0 16px',
 								}}
 							>
-								{t('Mulai Konsultasi Gratis Dengan Tim Kami', 'Start a Free Consultation With Our Team')}
+								Mulai Konsultasi Gratis Dengan Tim Kami
 							</p>
 
 							<a
@@ -568,7 +568,7 @@ const Website = () => {
 									<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.846.5 3.577 1.365 5.068L2 22l4.932-1.365A9.954 9.954 0 0012 22z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 									<path d="M10 11.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zm4.5 0a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zm4.5 0a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" fill="currentColor" />
 								</svg>
-								{t('Kontak Kami', 'Contact Us')}
+								Kontak Kami
 							</a>
 						</div>
 
@@ -624,8 +624,8 @@ const Website = () => {
 										lineHeight: '1.3',
 									}}
 								>
-									{t('Website Maintenance', 'Website Maintenance')}<br />
-									{t('dan Support', 'and Support')}
+									Website Maintenance<br />
+									dan Support
 								</h3>
 								<p
 									style={{
@@ -635,7 +635,7 @@ const Website = () => {
 										margin: 0,
 									}}
 								>
-									{t('Layanan pemeliharaan, update fitur, optimasi performa, dan monitoring keamanan secara berkala untuk memastikan website tetap stabil, aman, dan selalu optimal digunakan.', 'Maintenance services, feature updates, performance optimization, and periodic security monitoring to ensure your website remains stable, secure, and always optimal.')}
+									Layanan pemeliharaan, update fitur, optimasi performa, dan monitoring keamanan secara berkala untuk memastikan website tetap stabil, aman, dan selalu optimal digunakan.
 								</p>
 							</div>
 						</div>
@@ -694,7 +694,7 @@ const Website = () => {
 								style={{
 									width: '48px', // Aksen lebar solid maroon di sisi kanan gambar
 									height: '80%',
-									backgroundColor: '#00B4D8', // Warna konsisten dengan tombol hero (biru utama)
+									backgroundColor: '#00B4D8', // Warna konsisten dengan tombol hero (merah marun gelap)
 								}}
 							/>
 						</div>
@@ -721,7 +721,7 @@ const Website = () => {
 								lineHeight: '1.2',
 							}}
 						>
-							{t('Layanan Kami', 'Our Services')}
+							Layanan Kami
 						</h2>
 
 						<div className="website-services-list" style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
@@ -745,7 +745,8 @@ const Website = () => {
 										margin: 0,
 									}}
 								>
-									{t('Website profesional untuk menampilkan profil, visi, misi, layanan, dan portofolio perusahaan secara menarik.', 'A professional website to present company profile, vision, mission, services, and portfolio attractively.')}
+									Website profesional untuk menampilkan profil, visi, misi, layanan,
+									dan portofolio perusahaan secara menarik.
 								</p>
 							</div>
 
@@ -769,7 +770,8 @@ const Website = () => {
 										margin: 0,
 									}}
 								>
-									{t('Halaman website yang fokus pada konversi dengan desain menarik dan strategi digital marketing.', 'A website page focused on conversion with engaging design and digital marketing strategy.')}
+									Halaman website yang fokus pada konversi dengan desain
+									menarik dan strategi digital marketing.
 								</p>
 							</div>
 
@@ -793,7 +795,8 @@ const Website = () => {
 										margin: 0,
 									}}
 								>
-									{t('Pengembangan aplikasi web custom seperti ERP, CRM, dashboard, dan sistem bisnis lainnya.', 'Custom web application development such as ERP, CRM, dashboards, and other business systems.')}
+									Pengembangan aplikasi web custom seperti ERP, CRM,
+									dashboard, dan sistem bisnis lainnya.
 								</p>
 							</div>
 						</div>
@@ -818,7 +821,7 @@ const Website = () => {
 						width: '100%',
 						maxWidth: '1200px',
 						position: 'relative',
-						border: '2px solid #00B4D8', // Warna border biru
+						border: '2px solid #00B4D8', // Warna border maroon
 						borderRadius: '40px',
 						display: 'flex',
 						alignItems: 'stretch',
@@ -851,7 +854,8 @@ const Website = () => {
 								maxWidth: 'none',
 							}}
 						>
-							{t('Hubungi kami sekarang dan mulai bangun website profesional yang dapat meningkatkan kredibilitas serta menarik lebih banyak pelanggan.', 'Contact us now and start building a professional website that improves credibility and attracts more customers.')}
+							Hubungi kami sekarang dan mulai bangun website profesional yang
+							dapat meningkatkan kredibilitas serta menarik lebih banyak pelanggan.
 						</h2>
 
 						<a
@@ -861,9 +865,9 @@ const Website = () => {
 								alignSelf: 'flex-start',
 								padding: '12px 32px',
 								borderRadius: '999px',
-								border: '1px solid #00B4D8', // Border biru
-								backgroundColor: '#e6f7fc', // Warna background biru pastel
-								color: '#00B4D8', // Warna teks biru utama
+								border: '1px solid #0077B6', // Border maroon
+								backgroundColor: '#0077B6', // Warna background pink pastel
+								color: '#ffffff', // Warna teks maroon gelap
 								fontSize: '15px',
 								fontWeight: 700,
 								cursor: 'pointer',
@@ -875,7 +879,7 @@ const Website = () => {
 								justifyContent: 'center',
 							}}
 						>
-							{t('HUBUNGI KAMI', 'CONTACT US')}
+							CONTACT US
 						</a>
 					</div>
 
@@ -931,4 +935,3 @@ const Website = () => {
 };
 
 export default Website;
-

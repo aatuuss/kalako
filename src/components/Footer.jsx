@@ -133,7 +133,7 @@ const Footer = () => {
               <img
                 src="/img/kalako_logo.png"
                 alt="Kalako"
-                style={{ width: '80px', height: 'auto', display: 'block' }}
+                style={{ width: '200px', height: 'auto', display: 'block' }}
               />
               <span
                 style={{

@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
-import { useLanguage } from '../context/LanguageContext';
 
 const Service = () => {
-  const { t } = useLanguage();
-
   useEffect(() => {
     const els = document.querySelectorAll('.anim-el');
     if (!els.length) return;
@@ -203,9 +200,9 @@ const Service = () => {
               letterSpacing: '-1px',
             }}
           >
-            {t('Layanan Sistem', 'Our')}
+            Layanan Sistem
             <br />
-            {t('ERP Perusahaan Kami', 'Company ERP Services')}
+            ERP Perusahaan Kami
           </h1>
 
           <div
@@ -234,7 +231,7 @@ const Service = () => {
                 marginLeft: '10px'
               }}
             >
-              {t('layanan kami', 'our services')}
+              layanan kami
             </span>
           </div>
         </div>
@@ -355,7 +352,7 @@ const Service = () => {
             >
               Transformasi Digital Bisnis
               <br />
-              {t('dengan ERP System Modern', 'with Modern ERP Systems')}
+              dengan ERP System Modern
             </h2>
 
             <p
@@ -370,7 +367,9 @@ const Service = () => {
                 maxWidth: '690px',
               }}
             >
-              {t('Kami menyediakan ERP dengan fitur Dashboard, Prospects, Projects, Project Status, dan Role Managment, satu ERP Retail dengan POS, manajemen stok, dan laporan penjualan untuk mendukung operasional bisnis yang lebih cepat dan terkontrol.', 'We provide ERP with Dashboard, Prospects, Projects, Project Status, and Role Management features, plus retail ERP with POS, stock management, and sales reporting to support faster and more controlled business operations.')}
+              Kami menyediakan ERP dengan fitur Dashboard, Prospects, Projects, Project Status,
+              dan Role Managment, satu ERP Retail dengan POS, manajemen stok, dan laporan
+              penjualan untuk mendukung operasional bisnis yang lebih cepat dan terkontrol.
             </p>
           </div>
         </div>
@@ -397,9 +396,9 @@ const Service = () => {
               letterSpacing: '-0.3px',
             }}
           >
-            {t('Layanan Perusahaan', 'Company Services')}
+            Layanan Perusahaan
             <br />
-            {t('Kami', 'We Provide')}
+            Kami
           </h2>
 
           <div
@@ -458,14 +457,14 @@ const Service = () => {
                       listStyleType: 'disc',
                     }}
                   >
-                    <li>{t('Monitoring data bisnis secara real-time', 'Real-time business data monitoring')}</li>
-                    <li>{t('Visualisasi performa proyek', 'Project performance visualization')}</li>
-                    <li>{t('Manajemen data calon klien', 'Prospect data management')}</li>
-                    <li>{t('Tracking', 'Tracking')}</li>
-                    <li>{t('Perencanaan', 'Planning')}</li>
-                    <li>{t('pembagian tugas', 'Task assignment')}</li>
-                    <li>{t('Timeline dan target proyek', 'Project timeline and targets')}</li>
-                    <li>{t('Update status secara real-time', 'Real-time status updates')}</li>
+                    <li>Monitoring data bisnis secara real-time</li>
+                    <li>Visualisasi performa proyek</li>
+                    <li>Manajemen data calon klien</li>
+                    <li>Tracking</li>
+                    <li>Perencanaan</li>
+                    <li>pembagian tugas</li>
+                    <li>Timeline dan target proyek</li>
+                    <li>Update status secara real-time</li>
                   </ul>
                 </div>
               </div>
@@ -515,9 +514,9 @@ const Service = () => {
                       listStyleType: 'disc',
                     }}
                   >
-                    <li>{t('ERP manajemen keuangan dan akuntansi', 'ERP for finance and accounting management')}</li>
-                    <li>{t('Sistem inventory dan warehouse', 'Inventory and warehouse systems')}</li>
-                    <li>{t('Dashboard real-time untuk pengambilan keputusan', 'Real-time dashboards for decision making')}</li>
+                    <li>ERP manajemen keuangan dan akuntansi</li>
+                    <li>Sistem inventory dan warehouse</li>
+                    <li>Dashboard real-time untuk pengambilan keputusan</li>
                   </ul>
                 </div>
               </div>
@@ -700,10 +699,10 @@ const Service = () => {
               <h3 className="service-cta-title">
                 Kami hadir untuk membantu Anda membangun ERP System
                 <br />
-                {t('yang sesuai dengan kebutuhan bisnis Anda', 'that fits your business needs')}
+                yang sesuai dengan kebutuhan bisnis Anda
               </h3>
               <p className="service-cta-desc">
-                {t('Solusi terpadu untuk bisnis anda', 'Integrated solutions for your business')}
+                Solusi terpadu untuk bisnis anda
               </p>
             </div>
 
@@ -730,7 +729,7 @@ const Service = () => {
                 justifyContent: 'center',
               }}
             >
-              {t('HUBUNGI KAMI', 'CONTACT US')}
+              CONTACT US
             </a>
           </div>
         </div>

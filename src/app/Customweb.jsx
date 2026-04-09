@@ -1,5 +1,4 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import { useLanguage } from '../context/LanguageContext';
 
 const modulePortfolio = [
   {
@@ -66,40 +65,33 @@ const modulePortfolio = [
   },
 ];
 
+const serviceTabs = [
+  {
+    id: 'mobile-app',
+    label: 'Mobile Application',
+    title: 'Mobile Application',
+    description:
+      'Solusi aplikasi mobile modern berbasis Android dan iOS untuk mempermudah akses informasi, monitoring, dan layanan pelanggan secara real-time.',
+  },
+  {
+    id: 'ims',
+    label: 'Internal Management System',
+    title: 'Internal Management System',
+    description:
+      'Pembuatan sistem manajemen internal seperti ERP dan dashboard analitik untuk membantu pengambilan keputusan yang lebih cepat dan akurat.',
+  },
+  {
+    id: 'automation',
+    label: 'Business Automation System',
+    title: 'Business Automation System',
+    description:
+      'Kami membantu mengotomatisasi proses bisnis mulai dari workflow, laporan, hingga integrasi antar sistem agar perusahaan lebih efisien dan kompetitif.',
+  },
+];
+
 const portfolioNumbers = [1, 2, 3, 4, 5, 6];
 
 const Customweb = () => {
-  const { t } = useLanguage();
-  const serviceTabs = [
-    {
-      id: 'mobile-app',
-      label: t('Aplikasi Mobile', 'Mobile Application'),
-      title: t('Aplikasi Mobile', 'Mobile Application'),
-      description: t(
-        'Solusi aplikasi mobile modern berbasis Android dan iOS untuk mempermudah akses informasi, monitoring, dan layanan pelanggan secara real-time.',
-        'Modern Android and iOS mobile app solutions to simplify access to information, monitoring, and real-time customer services.'
-      ),
-    },
-    {
-      id: 'ims',
-      label: t('Sistem Manajemen Internal', 'Internal Management System'),
-      title: t('Sistem Manajemen Internal', 'Internal Management System'),
-      description: t(
-        'Pembuatan sistem manajemen internal seperti ERP dan dashboard analitik untuk membantu pengambilan keputusan yang lebih cepat dan akurat.',
-        'Development of internal management systems such as ERP and analytics dashboards to support faster and more accurate decision making.'
-      ),
-    },
-    {
-      id: 'automation',
-      label: t('Sistem Otomasi Bisnis', 'Business Automation System'),
-      title: t('Sistem Otomasi Bisnis', 'Business Automation System'),
-      description: t(
-        'Kami membantu mengotomatisasi proses bisnis mulai dari workflow, laporan, hingga integrasi antar sistem agar perusahaan lebih efisien dan kompetitif.',
-        'We help automate business processes from workflows and reports to cross-system integrations so companies become more efficient and competitive.'
-      ),
-    },
-  ];
-
   const [activeService, setActiveService] = useState(serviceTabs[0].id);
   const [activeModule, setActiveModule] = useState(1);
 
@@ -180,8 +172,8 @@ const Customweb = () => {
         .customweb-readmore-btn {
           padding: 10px 30px;
           border-radius: 999px;
-          background-color: #e6f7fc;
-          color: #00B4D8;
+          background-color: #03045E;
+          color: #ffffff;
           font-size: 15px;
           font-weight: 700;
           border: none;
@@ -579,7 +571,7 @@ const Customweb = () => {
                 style={{
                   fontSize: '32px',
                   fontWeight: 700,
-                  color: '#00B4D8',
+                  color: '#03045E',
                   textAlign: 'center',
                   lineHeight: '1.4',
                   margin: '0 0 32px 0',
@@ -588,7 +580,7 @@ const Customweb = () => {
               >
                 Layanan Perusahaan Pengembangan
                 <br />
-                {t('Perangkat Lunak Kustom', 'Custom Software Development')}
+                Perangkat Lunak Kustom
               </h1>
 
               <button
@@ -602,7 +594,7 @@ const Customweb = () => {
                 }}
                 style={{}}
               >
-                {t('BACA SELENGKAPNYA', 'READ MORE')}
+                BACA SELENGKAPNYA
               </button>
             </div>
 
@@ -667,13 +659,15 @@ const Customweb = () => {
               >
                 Custom Software untuk
                 <br />
-                {t('Meningkatkan Efisiensi dan', 'Improve Efficiency and')}
+                Meningkatkan Efisiensi dan
                 <br />
-                {t('Produktivitas', 'Productivity')}
+                Produktivitas
               </h2>
 
               <p className="customweb-info-content anim-el anim-right">
-                {t('Layanan Custom Software Development kami berfokus pada pembuatan solusi digital yang dirancang khusus sesuai kebutuhan bisnis Anda. Kami membantu perusahaan mengembangkan sistem yang fleksibel, aman, dan dapat berkembang seiring pertumbuhan bisnis.', 'Our Custom Software Development service focuses on creating digital solutions tailored to your business needs. We help companies build systems that are flexible, secure, and scalable as the business grows.')}
+                Layanan Custom Software Development kami berfokus pada pembuatan solusi digital yang
+                dirancang khusus sesuai kebutuhan bisnis Anda. Kami membantu perusahaan mengembangkan
+                sistem yang fleksibel, aman, dan dapat berkembang seiring pertumbuhan bisnis.
               </p>
             </div>
 
@@ -698,7 +692,7 @@ const Customweb = () => {
               >
                 Layanan yang Kami
                 <br />
-                {t('Sediakan', 'Provide')}
+                Sediakan
               </h2>
 
               <div className="customweb-service-row" style={{ gap: '40px', alignItems: 'flex-start' }}>
@@ -780,7 +774,7 @@ const Customweb = () => {
             >
               Portofolio Modul
               <br />
-              {t('Kami', 'Our')}
+              Kami
             </h2>
 
             <p
@@ -793,7 +787,8 @@ const Customweb = () => {
                 lineHeight: '1.6',
               }}
             >
-              {t('Kami telah mengembangkan berbagai modul perhitungan dan sistem engineering digital untuk membantu perusahaan meningkatkan efisiensi, akurasi, dan kecepatan analisis teknis.', 'We have developed various calculation modules and digital engineering systems to help companies improve efficiency, accuracy, and speed of technical analysis.')}
+              Kami telah mengembangkan berbagai modul perhitungan dan sistem engineering digital untuk
+              membantu perusahaan meningkatkan efisiensi, akurasi, dan kecepatan analisis teknis.
             </p>
 
             <div className="customweb-portfolio-nav">
@@ -801,14 +796,14 @@ const Customweb = () => {
                 className="customweb-portfolio-nav-arrow"
                 type="button"
                 onClick={handlePrevModule}
-                aria-label={t('Modul sebelumnya', 'Previous module')}
+                aria-label="Modul sebelumnya"
                 style={{
                   width: '40px',
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
                   border: '1.5px solid #00B4D8',
-                  backgroundColor: '#dff6fc',
+                  backgroundColor: '#03045E',
                   color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
@@ -831,14 +826,14 @@ const Customweb = () => {
                       key={number}
                       type="button"
                       onClick={() => setActiveModule(number)}
-                      aria-label={t(`Pilih modul ${number}`, `Select module ${number}`)}
+                      aria-label={`Pilih modul ${number}`}
                       style={{
                         width: '40px',
                         height: '40px',
                         borderRadius: '50%',
-                          border: '1.5px solid #00B4D8',
-                          backgroundColor: isActive ? '#00B4D8' : '#dff6fc',
-                          color: isActive ? '#ffffff' : '#00B4D8',
+                        border: '1.5px solid #00B4D8',
+                        backgroundColor: isActive ? '#00B4D8' : '#03045E',
+                        color: isActive ? '#ffffff' : '#00B4D8',
                         fontWeight: 700,
                         fontSize: '15px',
                         cursor: 'pointer',
@@ -855,14 +850,14 @@ const Customweb = () => {
                 className="customweb-portfolio-nav-arrow"
                 type="button"
                 onClick={handleNextModule}
-                aria-label={t('Modul berikutnya', 'Next module')}
+                aria-label="Modul berikutnya"
                 style={{
                   width: '40px',
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
                   border: '1.5px solid #00B4D8',
-                  backgroundColor: '#dff6fc',
+                  backgroundColor: '#03045E',
                   color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
@@ -1043,10 +1038,10 @@ const Customweb = () => {
                 <h3 className="customweb-cta-title">
                   Konsultasikan kebutuhan sistem Anda sekarang juga 
                   <br />
-                  {t('halaman Contact Us.', 'via the Contact Us page.')}
+                  halaman Contact Us.
                 </h3>
                 <p className="customweb-cta-desc">
-                  {t('Solusi terpadu untuk bisnis anda', 'Integrated solutions for your business')}
+                  Solusi terpadu untuk bisnis anda
                 </p>
               </div>
 
@@ -1055,7 +1050,7 @@ const Customweb = () => {
                 href="/contact"
                 style={{}}
               >
-                {t('HUBUNGI KAMI', 'CONTACT US')}
+                CONTACT US
               </a>
             </div>
           </div>
@@ -1066,4 +1061,3 @@ const Customweb = () => {
 };
 
 export default Customweb;
-
