@@ -128,13 +128,13 @@ const Footer = () => {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '-5px', marginBottom: '17px' }}>
               <img
-                src="/img/kalako.png"
+                src="/img/kalako_logo.png"
                 alt="Kalako"
                 style={{ width: '80px', height: 'auto', display: 'block' }}
               />
               <span
                 style={{
-                  color: '#630330',
+                  color: '#00B4D8',
                   fontSize: '32px',
                   fontWeight: 700,
                   lineHeight: 1,
@@ -143,7 +143,6 @@ const Footer = () => {
                   marginBottom: '-10px',
                 }}
               >
-                kalako
               </span>
             </div>
 
@@ -231,3 +230,4 @@ const Footer = () => {
 }
 
 export default Footer
+

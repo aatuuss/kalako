@@ -549,7 +549,7 @@ const Service = () => {
               >
                 <path
                   d="M108 76 C167 30 261 18 334 40 C401 60 441 117 450 186 L450 344 C437 398 395 434 330 444 C252 457 165 433 102 382 C42 333 14 257 19 186 C23 136 53 104 108 76 Z"
-                  fill="#640d2f"
+                  fill="#00B4D8"
                 />
               </svg>
 
@@ -606,9 +606,9 @@ const Service = () => {
               position: 'absolute',
               left: '70%',
               transform: 'translateX(-50%)',
-              bottom: '0px',
+              bottom: '-1px',
               width: '30%',
-              height: '30px',
+              height: '31px',
               backgroundColor: '#ffffff',
               borderTopLeftRadius: '32px',
               zIndex: 5,
@@ -620,10 +620,10 @@ const Service = () => {
             className="service-cutout-mask-right-bottom"
             style={{
               position: 'absolute',
-              right: 0,
-              bottom: '0px',
-              width: '15%',
-              height: '30px',
+              right: '-1px',
+              bottom: '-1px',
+              width: 'calc(15% + 1px)',
+              height: '31px',
               backgroundColor: '#ffffff',
               zIndex: 5,
             }}
@@ -634,10 +634,10 @@ const Service = () => {
             className="service-cutout-mask-right-top"
             style={{
               position: 'absolute',
-              right: 0,
-              bottom: '30px',
-              width: '15%',
-              height: '30px',
+              right: '-1px',
+              bottom: '29px',
+              width: 'calc(15% + 1px)',
+              height: '31px',
               backgroundColor: '#ffffff',
               borderTopLeftRadius: '32px',
               zIndex: 5,
@@ -651,9 +651,9 @@ const Service = () => {
               position: 'absolute',
               left: '70%',
               transform: 'translateX(-50%)',
-              bottom: '0px',
-              width: '30%',
-              height: '30px',
+              bottom: '-1px',
+              width: 'calc(30% + 2px)',
+              height: '31px',
               backgroundColor: '#e6e6e6',
               borderTopLeftRadius: '32px',
               borderBottomRightRadius: '32px',
@@ -666,11 +666,11 @@ const Service = () => {
             className="service-cutout-pink"
             style={{
               position: 'absolute',
-              right: 0,
-              bottom: '30px',
-              width: '15%',
-              height: '30px',
-              backgroundColor: '#ffb2d9',
+              right: '-1px',
+              bottom: '29px',
+              width: 'calc(15% + 1px)',
+              height: '31px',
+              backgroundColor: '#03045E',
               borderTopLeftRadius: '32px',
               borderBottomRightRadius: '32px',
               zIndex: 7,
@@ -683,7 +683,7 @@ const Service = () => {
             style={{
               position: 'relative',
               zIndex: 4,
-              backgroundColor: '#5b0726',
+              backgroundColor: '#00B4D8',
               borderRadius: '32px',
               borderBottomRightRadius: '0px',
               padding: '40px 50px',

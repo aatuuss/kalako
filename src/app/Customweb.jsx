@@ -172,8 +172,8 @@ const Customweb = () => {
         .customweb-readmore-btn {
           padding: 10px 30px;
           border-radius: 999px;
-          background-color: #ffe8f3;
-          color: #630330;
+          background-color: #03045E;
+          color: #ffffff;
           font-size: 15px;
           font-weight: 700;
           border: none;
@@ -571,7 +571,7 @@ const Customweb = () => {
                 style={{
                   fontSize: '32px',
                   fontWeight: 700,
-                  color: '#630330',
+                  color: '#03045E',
                   textAlign: 'center',
                   lineHeight: '1.4',
                   margin: '0 0 32px 0',
@@ -610,7 +610,7 @@ const Customweb = () => {
                 border: '8px solid rgba(255, 255, 255, 0.3)',
               }}
             >
-              <div style={{ flex: 1, backgroundColor: '#f9f9f9', position: 'relative' }}>
+              <div style={{ flex: 1, backgroundColor: '#03045E', position: 'relative' }}>
                 <img
                   src="/img/custom.png"
                   alt="App Dashboard Preview"
@@ -707,7 +707,7 @@ const Customweb = () => {
                         onClick={() => setActiveService(service.id)}
                         style={{
                           padding: '14px 20px',
-                          backgroundColor: isActive ? '#630330' : '#f5f5f5',
+                          backgroundColor: isActive ? '#00B4D8' : '#f5f5f5',
                           color: isActive ? '#ffffff' : '#000000',
                           borderRadius: '6px',
                           fontSize: '16px',
@@ -802,9 +802,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #630330',
-                  backgroundColor: '#f2a7c8',
-                  color: '#630330',
+                  border: '1.5px solid #00B4D8',
+                  backgroundColor: '#03045E',
+                  color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -831,9 +831,9 @@ const Customweb = () => {
                         width: '40px',
                         height: '40px',
                         borderRadius: '50%',
-                        border: '1.5px solid #630330',
-                        backgroundColor: isActive ? '#630330' : '#f2a7c8',
-                        color: isActive ? '#ffffff' : '#630330',
+                        border: '1.5px solid #00B4D8',
+                        backgroundColor: isActive ? '#00B4D8' : '#03045E',
+                        color: isActive ? '#ffffff' : '#00B4D8',
                         fontWeight: 700,
                         fontSize: '15px',
                         cursor: 'pointer',
@@ -856,9 +856,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #630330',
-                  backgroundColor: '#f2a7c8',
-                  color: '#630330',
+                  border: '1.5px solid #00B4D8',
+                  backgroundColor: '#03045E',
+                  color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -1012,7 +1012,7 @@ const Customweb = () => {
                 bottom: '30px',
                 width: '15%',
                 height: '30px',
-                backgroundColor: '#ffb2d9',
+                backgroundColor: '#03045E',
                 borderTopLeftRadius: '32px',
                 borderBottomRightRadius: '32px',
                 zIndex: 7,
@@ -1024,7 +1024,7 @@ const Customweb = () => {
               style={{
                 position: 'relative',
                 zIndex: 4,
-                backgroundColor: '#630330',
+                backgroundColor: '#00B4D8',
                 borderRadius: '32px',
                 borderBottomRightRadius: '0px',
                 padding: '40px 50px',
@@ -1061,3 +1061,4 @@ const Customweb = () => {
 };
 
 export default Customweb;
+

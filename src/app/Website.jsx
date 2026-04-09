@@ -292,7 +292,7 @@ const Website = () => {
 							right: 0,
 							width: '36.5%',
 							height: '100%',
-							backgroundColor: '#6a0034',
+							backgroundColor: '#00B4D8',
 						}}
 					/>
 
@@ -332,7 +332,7 @@ const Website = () => {
 							}}
 							style={{
 								marginTop: '30px',
-								border: '2px solid #6a0a68',
+								border: '2px solid #00B4D8',
 								borderRadius: '10px',
 								backgroundColor: '#f8f8f8',
 								color: '#1a1a1a',
@@ -363,7 +363,7 @@ const Website = () => {
 							borderRadius: '22px',
 							padding: '17px 14px 14px',
 							background: 'rgba(255, 255, 255, 0.70)',
-							color: '#ffffff',
+							color: '#03045E',
 							display: 'flex',
 							flexDirection: 'column',
 							justifyContent: 'space-between',
@@ -694,7 +694,7 @@ const Website = () => {
 								style={{
 									width: '48px', // Aksen lebar solid maroon di sisi kanan gambar
 									height: '80%',
-									backgroundColor: '#630330', // Warna konsisten dengan tombol hero (merah marun gelap)
+									backgroundColor: '#00B4D8', // Warna konsisten dengan tombol hero (merah marun gelap)
 								}}
 							/>
 						</div>
@@ -821,7 +821,7 @@ const Website = () => {
 						width: '100%',
 						maxWidth: '1200px',
 						position: 'relative',
-						border: '2px solid #630330', // Warna border maroon
+						border: '2px solid #00B4D8', // Warna border maroon
 						borderRadius: '40px',
 						display: 'flex',
 						alignItems: 'stretch',
@@ -865,9 +865,9 @@ const Website = () => {
 								alignSelf: 'flex-start',
 								padding: '12px 32px',
 								borderRadius: '999px',
-								border: '1px solid #630330', // Border maroon
-								backgroundColor: '#ffe8f3', // Warna background pink pastel
-								color: '#630330', // Warna teks maroon gelap
+								border: '1px solid #0077B6', // Border maroon
+								backgroundColor: '#0077B6', // Warna background pink pastel
+								color: '#ffffff', // Warna teks maroon gelap
 								fontSize: '15px',
 								fontWeight: 700,
 								cursor: 'pointer',
@@ -904,7 +904,7 @@ const Website = () => {
 								transform: 'translateY(-50%)',
 								width: '220px', // Diperkecil agar masuk ke dalam card
 								height: '220px',
-								backgroundColor: '#5b0726',
+								backgroundColor: '#00B4D8',
 								borderRadius: '50%',
 								zIndex: 1,
 							}}
@@ -935,3 +935,4 @@ const Website = () => {
 };
 
 export default Website;
+
