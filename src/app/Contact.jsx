@@ -114,11 +114,11 @@ const Contact = () => {
         .form-group-ref input:focus, 
         .form-group-ref textarea:focus {
           outline: none;
-          border-color: #00B4D8;
+          border-color: CAF0F8#;
         }
 
         .btn-kirim {
-          background-color: #00B4D8;
+          background-color: #CAF0F8;
           color: white;
           padding: 12px 35px;
           border-radius: 10px;
@@ -209,7 +209,7 @@ const Contact = () => {
           right: 0px;
           width: 90%;
           height: 75%;
-          background: #00B4D8;
+          background: #CAF0F8;
           border-radius: 50% 10% 20% 50% / 50% 10% 20% 50%;
           z-index: 1;
         }
@@ -239,7 +239,7 @@ const Contact = () => {
         .vector-dot {
           width: 4px;
           height: 4px;
-          background-color: #00B4D8;
+          background-color: #CAF0F8;
           border-radius: 50%;
         }
 

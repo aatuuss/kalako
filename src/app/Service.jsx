@@ -549,19 +549,20 @@ const Service = () => {
               >
                 <path
                   d="M108 76 C167 30 261 18 334 40 C401 60 441 117 450 186 L450 344 C437 398 395 434 330 444 C252 457 165 433 102 382 C42 333 14 257 19 186 C23 136 53 104 108 76 Z"
-                  fill="#00B4D8"
+                  fill="#CAF0F8"
                 />
               </svg>
 
               <img
-                src="/img/dummy.webp"
+                src="/img/6.png"
                 alt="Visual layanan"
                 style={{
                   position: 'relative',
-                  width: '90%',
+                  width: '130%',
                   height: 'auto',
                   objectFit: 'contain',
                   zIndex: 2,
+                  transform: 'translateX(60px)',
                 }}
               />
             </div>
@@ -670,7 +671,7 @@ const Service = () => {
               bottom: '29px',
               width: 'calc(15% + 1px)',
               height: '31px',
-              backgroundColor: '#03045E',
+              backgroundColor: '#0077B6',
               borderTopLeftRadius: '32px',
               borderBottomRightRadius: '32px',
               zIndex: 7,

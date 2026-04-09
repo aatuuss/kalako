@@ -172,7 +172,7 @@ const Customweb = () => {
         .customweb-readmore-btn {
           padding: 10px 30px;
           border-radius: 999px;
-          background-color: #03045E;
+          background-color: #0077b6;
           color: #ffffff;
           font-size: 15px;
           font-weight: 700;
@@ -802,9 +802,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #00B4D8',
-                  backgroundColor: '#03045E',
-                  color: '#00B4D8',
+                  border: '1.5px solid #0077B6',
+                  backgroundColor: '#00B4D8',
+                  color: '#ffffff',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -831,9 +831,9 @@ const Customweb = () => {
                         width: '40px',
                         height: '40px',
                         borderRadius: '50%',
-                        border: '1.5px solid #00B4D8',
-                        backgroundColor: isActive ? '#00B4D8' : '#03045E',
-                        color: isActive ? '#ffffff' : '#00B4D8',
+                        border: '1.5px solid #0077B6',
+                        backgroundColor: isActive ? '#00B4D8' : '#0077B6',
+                        color: '#ffffff',
                         fontWeight: 700,
                         fontSize: '15px',
                         cursor: 'pointer',
@@ -856,9 +856,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #00B4D8',
-                  backgroundColor: '#03045E',
-                  color: '#00B4D8',
+                  border: '1.5px solid #0077B6',
+                  backgroundColor: '#00B4D8',
+                  color: '#ffffff',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -1012,7 +1012,7 @@ const Customweb = () => {
                 bottom: '30px',
                 width: '15%',
                 height: '30px',
-                backgroundColor: '#03045E',
+                backgroundColor: '#0077B6',
                 borderTopLeftRadius: '32px',
                 borderBottomRightRadius: '32px',
                 zIndex: 7,

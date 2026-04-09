@@ -904,7 +904,7 @@ const Website = () => {
 								transform: 'translateY(-50%)',
 								width: '220px', // Diperkecil agar masuk ke dalam card
 								height: '220px',
-								backgroundColor: '#00B4D8',
+								backgroundColor: '#CAF0F8',
 								borderRadius: '50%',
 								zIndex: 1,
 							}}
@@ -913,7 +913,7 @@ const Website = () => {
 						{/* Gambar Karakter (Wanita HP) */}
 						<img
 							className="website-cta-image"
-							src="/img/dummy-contact.png" // Tolong diganti dengan gambar wanita aslinya jika ada
+							src="/img/8.png" // Tolong diganti dengan gambar wanita aslinya jika ada
 							alt="Customer Service / User"
 							style={{
 								position: 'absolute',

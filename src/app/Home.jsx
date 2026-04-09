@@ -379,7 +379,7 @@ const Home = () => {
 
         /* CTA Banner */
         .cta-banner {
-          background: linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 50%, #005f8f 100%);
+          background: #CAF0F8;
           background-size: 200% 200%;
           animation: gradientMove 10s ease infinite;
           border-radius: 22px;
@@ -445,7 +445,7 @@ const Home = () => {
         }
 
         .glass-panel-img-container {
-          width: 240px;
+          width: 320px;
           display: flex;
           justify-content: center;
           align-items: flex-end;
@@ -608,7 +608,7 @@ const Home = () => {
              order: 2 !important;
           }
           .glass-panel-img {
-            width: min(72vw, 300px) !important;
+            width: min(78vw, 360px) !important;
             height: auto !important;
             margin-bottom: -14px !important;
             transform: none !important;
@@ -648,7 +648,7 @@ const Home = () => {
             max-width: 100% !important;
           }
           .glass-panel-img {
-            width: min(85vw, 250px) !important;
+            width: min(90vw, 300px) !important;
             margin-bottom: -10px !important;
           }
           .premium-card {
@@ -878,7 +878,7 @@ const Home = () => {
                   padding: '7px 16px',
                   backgroundColor: 'rgba(255,255,255,0.15)',
                   border: '1px solid rgba(255,255,255,0.25)',
-                  color: '#ffffff',
+                  color: '#0077b6',
                   borderRadius: '30px',
                   fontSize: '12px',
                   fontWeight: 700,
@@ -892,17 +892,17 @@ const Home = () => {
                 <h3 style={{
                   fontSize: '28px',
                   fontWeight: 900,
-                  color: '#ffffff',
+                  color: '#0077b6',
                   marginBottom: '10px',
                   lineHeight: 1.15,
                   letterSpacing: '-1.1px',
                   textShadow: '0 10px 30px rgba(0,0,0,0.1)'
                 }}>
-                  {t('Bawa Perusahaan Anda ke', 'Take Your Company to the')} <span style={{ color: '#f2da00', textShadow: '0 0 20px rgba(242, 218, 0, 0.3)' }}>{t('Level Tertinggi.', 'Highest Level.')}</span>
+                  {t('Bawa Perusahaan Anda ke', 'Take Your Company to the')} <span style={{ color: '#0077b6', textShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>{t('Level Tertinggi.', 'Highest Level.')}</span>
                 </h3>
                 <p style={{
                   fontSize: '14px',
-                  color: 'rgba(255,255,255,0.92)',
+                  color: '#0077b6',
                   marginBottom: '16px',
                   lineHeight: 1.6,
                   fontWeight: 400,
@@ -929,7 +929,7 @@ const Home = () => {
                     {t('Jadwalkan Konsultasi Gratis', 'Schedule a Free Consultation')}
                   </button>
                   <Link to="/about" style={{
-                    color: '#ffffff',
+                    color: '#0077b6',
                     textDecoration: 'none',
                     fontSize: '16px',
                     fontWeight: 600,

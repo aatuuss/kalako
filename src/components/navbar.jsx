@@ -36,7 +36,7 @@ const Navbar = () => {
       isDropdown: true,
       subItems: [
         { label: 'Web & App Development', path: '/website', icon: '💻' },
-        { label: 'Enterprise Resource Planning (ERP)', path: '/servicem', icon: '📊' },
+        { label: 'Enterprise Resource Planning (ERP)', path: '/service', icon: '📊' },
         { label: 'Custom Software Development', path: '/cutsomweb', icon: '🚀' }
       ]
     },
