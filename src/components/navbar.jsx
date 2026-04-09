@@ -84,12 +84,12 @@ const Navbar = () => {
         }
 
         .nav-link:hover {
-          color: #630330;
+          color: #00B4D8;
           transform: translateY(-1px);
         }
 
         .nav-link.active {
-          color: #630330;
+          color: #00B4D8;
           font-weight: 600;
         }
 
@@ -99,7 +99,7 @@ const Navbar = () => {
           left: 50%;
           transform: translateX(-50%);
           height: 3px;
-          background-color: #630330;
+          background-color: #00B4D8;
           border-radius: 4px;
           width: 0;
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -126,7 +126,7 @@ const Navbar = () => {
         }
 
         .mobile-menu-toggle:hover {
-          border-color: #630330;
+          border-color: #00B4D8;
           background: #fdf2f7;
           transform: scale(1.05);
         }
@@ -153,7 +153,7 @@ const Navbar = () => {
         }
 
         .mobile-link.active {
-          color: #630330;
+          color: #00B4D8;
         }
 
         @media screen and (max-width: 992px) {
@@ -250,9 +250,9 @@ const Navbar = () => {
 
         .dropdown-item:hover {
           background-color: #fcf5f9;
-          color: #630330;
+          color: #00B4D8;
           transform: translateX(8px);
-          box-shadow: 0 4px 12px rgba(99, 3, 48, 0.04);
+          box-shadow: 0 4px 12px rgba(0, 180, 216, 0.04);
         }
 
         .dropdown-icon {
@@ -303,8 +303,8 @@ const Navbar = () => {
         }
 
         .mobile-sub-link:hover {
-          color: #630330;
-          background: rgba(99, 3, 48, 0.02);
+          color: #00B4D8;
+          background: rgba(0, 180, 216, 0.02);
         }
 
         .mobile-sub-link:last-child {
@@ -345,7 +345,7 @@ const Navbar = () => {
               src="/img/kalako_logo.png"
               alt="Kalako Logo"
               style={{
-                height: isScrolled ? 36 : 46,
+                height: isScrolled ? 45 : 49,
                 width: 'auto',
                 objectFit: 'contain',
                 transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -466,7 +466,7 @@ const Navbar = () => {
               <button
                 style={{
                   padding: '13px 32px',
-                  background: 'linear-gradient(135deg, #630330 0%, #8b0a48 100%)',
+                  background: 'linear-gradient(135deg, #00B4D8 0%, #0077B6 100%)',
                   color: '#ffffff',
                   border: 'none',
                   borderRadius: '100px',
@@ -474,18 +474,18 @@ const Navbar = () => {
                   fontWeight: 600,
                   cursor: 'pointer',
                   transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
-                  boxShadow: '0 8px 25px rgba(99, 3, 48, 0.25)',
+                  boxShadow: '0 8px 25px rgba(0, 180, 216, 0.25)',
                   fontFamily: "'Inter', sans-serif",
                   position: 'relative',
                   overflow: 'hidden'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-3px)'
-                  e.currentTarget.style.boxShadow = '0 15px 35px rgba(99, 3, 48, 0.35)'
+                  e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 180, 216, 0.35)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)'
-                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(99, 3, 48, 0.25)'
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 180, 216, 0.25)'
                 }}
               >
                 {t('Hubungi Kami', 'Contact Us')}
@@ -498,7 +498,7 @@ const Navbar = () => {
             aria-label="Toggle mobile menu"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#630330" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00B4D8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               {isMobileMenuOpen
                 ? <><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></>
                 : <><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></>}
@@ -565,7 +565,7 @@ const Navbar = () => {
                   style={{
                     width: '100%',
                     padding: '12px 20px',
-                    backgroundColor: '#630330',
+                    backgroundColor: '#00B4D8',
                     color: '#ffffff',
                     border: 'none',
                     borderRadius: '12px',

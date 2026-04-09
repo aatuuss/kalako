@@ -157,15 +157,15 @@ const Home = () => {
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
         .erp-app {
-          --erp-primary: #630330;
-          --erp-primary-hover: #4a0224;
-          --erp-primary-light: #f3d4e5;
-          --erp-secondary: #f2da00;
+          --erp-primary: #00B4D8;
+          --erp-primary-hover: #0077B6;
+          --erp-primary-light: #dff6fc;
+          --erp-secondary: #0077B6;
           --erp-dark: #111111;
-          --erp-text: #4a5568;
+          --erp-text: #0f4c5c;
           --erp-bg: #ffffff;
           --erp-bg-alt: #fafafa;
-          --erp-border: #eaeaea;
+          --erp-border: #0077B6;
 
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
           color: var(--erp-text);
@@ -205,7 +205,7 @@ const Home = () => {
         /* Buttons */
         .btn-primary {
           padding: 16px 36px;
-          background: linear-gradient(135deg, var(--erp-primary) 0%, #8b0a48 100%);
+          background: linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 100%);
           color: white;
           border: none;
           border-radius: 100px;
@@ -213,7 +213,7 @@ const Home = () => {
           font-weight: 600;
           cursor: pointer;
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-          box-shadow: 0 10px 25px rgba(99, 3, 48, 0.25);
+          box-shadow: 0 10px 25px rgba(0, 180, 216, 0.25);
           font-family: 'Inter', sans-serif;
           display: inline-flex;
           align-items: center;
@@ -223,7 +223,7 @@ const Home = () => {
 
         .btn-primary:hover {
           transform: translateY(-3px) scale(1.02);
-          box-shadow: 0 15px 35px rgba(99, 3, 48, 0.35);
+          box-shadow: 0 15px 35px rgba(0, 180, 216, 0.35);
           filter: brightness(1.1);
         }
 
@@ -263,7 +263,7 @@ const Home = () => {
           position: absolute;
           width: 600px;
           height: 600px;
-          background: radial-gradient(circle, rgba(99, 3, 48, 0.08) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(0, 180, 216, 0.08) 0%, transparent 70%);
           border-radius: 50%;
           filter: blur(40px);
           z-index: 0;
@@ -279,7 +279,7 @@ const Home = () => {
           right: 0;
           width: 55%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(99, 3, 48, 0.03) 0%, rgba(99, 3, 48, 0) 100%);
+          background: linear-gradient(135deg, rgba(0, 180, 216, 0.03) 0%, rgba(0, 180, 216, 0) 100%);
           border-bottom-left-radius: 40%;
           pointer-events: none;
           z-index: 1;
@@ -314,7 +314,7 @@ const Home = () => {
           background-color: var(--erp-primary);
           color: white;
           border-color: var(--erp-primary);
-          box-shadow: 0 4px 15px rgba(99, 3, 48, 0.2);
+          box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2);
         }
 
         /* Feature/Service Card */
@@ -347,12 +347,12 @@ const Home = () => {
 
         .accordion-item:hover {
           border-color: var(--erp-primary-light);
-          box-shadow: 0 4px 20px rgba(99, 3, 48, 0.05);
+          box-shadow: 0 4px 20px rgba(0, 180, 216, 0.05);
         }
 
         .accordion-item.active {
           border-color: var(--erp-primary);
-          box-shadow: 0 8px 30px rgba(99, 3, 48, 0.1);
+          box-shadow: 0 8px 30px rgba(0, 180, 216, 0.1);
         }
 
         .accordion-btn {
@@ -379,13 +379,13 @@ const Home = () => {
 
         /* CTA Banner */
         .cta-banner {
-          background: linear-gradient(135deg, var(--erp-primary) 0%, #aa0552 50%, #3d0a28 100%);
+          background: linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 50%, #005f8f 100%);
           background-size: 200% 200%;
           animation: gradientMove 10s ease infinite;
           border-radius: 22px;
           position: relative;
           overflow: hidden;
-          box-shadow: 0 12px 28px rgba(99, 3, 48, 0.2);
+          box-shadow: 0 12px 28px rgba(0, 180, 216, 0.2);
         }
 
         .cta-banner::after {
@@ -483,7 +483,7 @@ const Home = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(135deg, var(--erp-primary) 0%, #aa0552 100%);
+          background: linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -536,7 +536,7 @@ const Home = () => {
             bottom: 0;
             border-bottom-left-radius: 0;
             border-top-left-radius: 50%;
-            background: linear-gradient(180deg, rgba(99, 3, 48, 0.02) 0%, rgba(99, 3, 48, 0.05) 100%);
+            background: linear-gradient(180deg, rgba(0, 180, 216, 0.02) 0%, rgba(0, 180, 216, 0.05) 100%);
           }
           .hero-bg-accent {
             width: 300px;
@@ -691,7 +691,7 @@ const Home = () => {
             </h1>
             <p className="animate-fade-in-up delay-200" style={{
               fontSize: '18px',
-              color: '#5a6b82',
+              color: '#555555',
               lineHeight: 1.6,
               marginBottom: '42px',
               maxWidth: '520px',
@@ -762,7 +762,7 @@ const Home = () => {
                 height: '380px',
                 borderRadius: '24px',
                 overflow: 'hidden',
-                boxShadow: '0 20px 40px rgba(99, 3, 48, 0.12)',
+                boxShadow: '0 20px 40px rgba(0, 180, 216, 0.12)',
                 position: 'relative',
                 border: '1px solid rgba(0,0,0,0.05)'
               }}>
@@ -976,20 +976,20 @@ const Home = () => {
           <div className="premium-card animate-fade-in-up" style={{ display: 'flex', gap: '80px', alignItems: 'center', background: '#ffffff', border: '1px solid rgba(0,0,0,0.04)' }}>
             <div className="card-img-side" style={{ flex: '0 0 500px' }}>
               <div style={{ borderRadius: '24px', border: '1px solid rgba(0,0,0,0.06)', backgroundColor: '#ffffff', padding: '12px', boxShadow: '0 20px 50px rgba(0,0,0,0.06)', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: 'linear-gradient(90deg, var(--erp-primary), #aa0552)' }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: 'linear-gradient(90deg, var(--erp-primary), #0077B6)' }}></div>
                 <img src={activeFeatureCard.image} alt={activeFeatureCard.imageAlt} style={{ width: '100%', borderRadius: '16px', display: 'block' }} />
               </div>
             </div>
 
             <div className="card-content-side" style={{ flex: 1 }}>
-              <span style={{ display: 'inline-block', padding: '7px 15px', backgroundColor: 'rgba(99,3,48,0.06)', color: 'var(--erp-primary)', borderRadius: '30px', fontSize: '12.5px', fontWeight: 800, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.8px', border: '1px solid rgba(99,3,48,0.1)' }}>{t('Modul', 'Module')} {activeFeatureCard.tabLabel}</span>
+              <span style={{ display: 'inline-block', padding: '7px 15px', backgroundColor: 'rgba(0,180,216,0.06)', color: 'var(--erp-primary)', borderRadius: '30px', fontSize: '12.5px', fontWeight: 800, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.8px', border: '1px solid rgba(0,180,216,0.1)' }}>{t('Modul', 'Module')} {activeFeatureCard.tabLabel}</span>
               <h3 style={{ fontSize: '34px', fontWeight: 900, color: 'var(--erp-dark)', marginBottom: '20px', lineHeight: 1.2, letterSpacing: '-0.5px' }}>{activeFeatureCard.title}</h3>
               <p style={{ fontSize: '17px', color: '#5a6b82', lineHeight: 1.7, marginBottom: '36px' }}>{activeFeatureCard.desc1}</p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 {activeFeatureCard.points.map((point, i) => (
                   <div key={i} style={{ display: 'flex', gap: '18px', alignItems: 'center' }}>
-                    <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'linear-gradient(135deg, var(--erp-primary) 0%, #8b0a48 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 10px 20px rgba(99,3,48,0.25)' }}>
+                    <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 10px 20px rgba(0,180,216,0.25)' }}>
                       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     </div>
                     <div>

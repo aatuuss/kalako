@@ -137,7 +137,7 @@ const Footer = () => {
               />
               <span
                 style={{
-                  color: '#630330',
+                  color: '#00B4D8',
                   fontSize: '32px',
                   fontWeight: 700,
                   lineHeight: 1,

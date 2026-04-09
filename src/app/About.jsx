@@ -10,15 +10,15 @@ const About = () => {
 
       <style>{`
         .about-app {
-          --erp-primary: #630330;
-          --erp-primary-hover: #4a0224;
-          --erp-primary-light: #f3d4e5;
-          --erp-secondary: #f2da00;
+          --erp-primary: #00B4D8;
+          --erp-primary-hover: #0077B6;
+          --erp-primary-light: #dff6fc;
+          --erp-secondary: #0077B6;
           --erp-dark: #111111;
-          --erp-text: #4a5568;
+          --erp-text: #0f4c5c;
           --erp-bg: #ffffff;
           --erp-bg-alt: #fafafa;
-          --erp-border: #eaeaea;
+          --erp-border: #cfeaf3;
 
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
           color: var(--erp-text);
@@ -43,7 +43,7 @@ const About = () => {
 
         /* Typography */
         .text-gradient {
-          background: linear-gradient(135deg, var(--erp-primary) 0%, #aa0552 100%);
+          background: linear-gradient(135deg, var(--erp-primary) 0%, #0077B6 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -87,7 +87,7 @@ const About = () => {
           left: 0;
           width: 50%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(99, 3, 48, 0.04) 0%, rgba(99, 3, 48, 0) 100%);
+          background: linear-gradient(135deg, rgba(0, 180, 216, 0.04) 0%, rgba(0, 180, 216, 0) 100%);
           border-bottom-right-radius: 100%;
           pointer-events: none;
           z-index: 1;
@@ -113,11 +113,11 @@ const About = () => {
           position: absolute;
           bottom: -40px;
           right: -40px;
-          background: linear-gradient(135deg, var(--erp-primary), #8a0543);
+          background: linear-gradient(135deg, var(--erp-primary), #0077B6);
           border-radius: 20px;
           padding: 40px;
           max-width: 380px;
-          box-shadow: 0 20px 40px rgba(99, 3, 48, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 180, 216, 0.3);
           z-index: 10;
         }
 
@@ -293,7 +293,7 @@ const About = () => {
         {/* ── Vision & Mission Section ── */}
         <section className="section-padding" style={{ backgroundColor: '#f9f9fc', position: 'relative', overflow: 'hidden' }}>
           {/* Decorative background circle */}
-          <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '500px', height: '500px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(99,3,48,0.03) 0%, rgba(255,255,255,0) 70%)', zIndex: 0 }}></div>
+          <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '500px', height: '500px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0,180,216,0.03) 0%, rgba(255,255,255,0) 70%)', zIndex: 0 }}></div>
 
           <div className="container" style={{ position: 'relative', zIndex: 10 }}>
 
@@ -315,7 +315,7 @@ const About = () => {
               {/* Vision Image */}
               <div className="flex-img animate-fade-in-up delay-100" style={{ display: 'flex', justifyContent: 'center' }}>
                 <div className="vm-bg-shape" style={{ top: '-30px', right: '-30px', width: '90%', height: '100%' }}></div>
-                <div className="vm-image-container" style={{ width: '90%', height: '360px', position: 'relative', zIndex: 2, borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(99, 3, 48, 0.15)' }}>
+                <div className="vm-image-container" style={{ width: '90%', height: '360px', position: 'relative', zIndex: 2, borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0, 180, 216, 0.15)' }}>
                   <img src="/img/vision.jpg" alt="Visi Perusahaan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               </div>
@@ -354,7 +354,7 @@ const About = () => {
 
               {/* Mission Image (Placeholder using about/vision style or standard container) */}
               <div className="flex-img animate-fade-in-up" style={{ display: 'flex', justifyContent: 'center' }}>
-                <div className="vm-bg-shape" style={{ bottom: '-30px', left: '-30px', width: '90%', height: '100%', backgroundColor: '#630330', opacity: 0.1 }}></div>
+                <div className="vm-bg-shape" style={{ bottom: '-30px', left: '-30px', width: '90%', height: '100%', backgroundColor: '#00B4D8', opacity: 0.1 }}></div>
                 <div className="vm-image-container" style={{ width: '90%', height: '360px', position: 'relative', zIndex: 2, borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)' }}>
                   {/* Here we reuse about.jpg or vision.jpg if a mission-specific one isn't available, applying a slight filter so it looks distinct */}
                   <img src="/img/about.jpg" alt="Misi Perusahaan" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />

@@ -694,7 +694,7 @@ const Website = () => {
 								style={{
 									width: '48px', // Aksen lebar solid maroon di sisi kanan gambar
 									height: '80%',
-									backgroundColor: '#630330', // Warna konsisten dengan tombol hero (merah marun gelap)
+									backgroundColor: '#00B4D8', // Warna konsisten dengan tombol hero (biru utama)
 								}}
 							/>
 						</div>
@@ -818,7 +818,7 @@ const Website = () => {
 						width: '100%',
 						maxWidth: '1200px',
 						position: 'relative',
-						border: '2px solid #630330', // Warna border maroon
+						border: '2px solid #00B4D8', // Warna border biru
 						borderRadius: '40px',
 						display: 'flex',
 						alignItems: 'stretch',
@@ -861,9 +861,9 @@ const Website = () => {
 								alignSelf: 'flex-start',
 								padding: '12px 32px',
 								borderRadius: '999px',
-								border: '1px solid #630330', // Border maroon
-								backgroundColor: '#ffe8f3', // Warna background pink pastel
-								color: '#630330', // Warna teks maroon gelap
+								border: '1px solid #00B4D8', // Border biru
+								backgroundColor: '#e6f7fc', // Warna background biru pastel
+								color: '#00B4D8', // Warna teks biru utama
 								fontSize: '15px',
 								fontWeight: 700,
 								cursor: 'pointer',

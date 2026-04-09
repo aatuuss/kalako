@@ -180,8 +180,8 @@ const Customweb = () => {
         .customweb-readmore-btn {
           padding: 10px 30px;
           border-radius: 999px;
-          background-color: #ffe8f3;
-          color: #630330;
+          background-color: #e6f7fc;
+          color: #00B4D8;
           font-size: 15px;
           font-weight: 700;
           border: none;
@@ -579,7 +579,7 @@ const Customweb = () => {
                 style={{
                   fontSize: '32px',
                   fontWeight: 700,
-                  color: '#630330',
+                  color: '#00B4D8',
                   textAlign: 'center',
                   lineHeight: '1.4',
                   margin: '0 0 32px 0',
@@ -713,7 +713,7 @@ const Customweb = () => {
                         onClick={() => setActiveService(service.id)}
                         style={{
                           padding: '14px 20px',
-                          backgroundColor: isActive ? '#630330' : '#f5f5f5',
+                          backgroundColor: isActive ? '#00B4D8' : '#f5f5f5',
                           color: isActive ? '#ffffff' : '#000000',
                           borderRadius: '6px',
                           fontSize: '16px',
@@ -807,9 +807,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #630330',
-                  backgroundColor: '#f2a7c8',
-                  color: '#630330',
+                  border: '1.5px solid #00B4D8',
+                  backgroundColor: '#dff6fc',
+                  color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -836,9 +836,9 @@ const Customweb = () => {
                         width: '40px',
                         height: '40px',
                         borderRadius: '50%',
-                        border: '1.5px solid #630330',
-                        backgroundColor: isActive ? '#630330' : '#f2a7c8',
-                        color: isActive ? '#ffffff' : '#630330',
+                          border: '1.5px solid #00B4D8',
+                          backgroundColor: isActive ? '#00B4D8' : '#dff6fc',
+                          color: isActive ? '#ffffff' : '#00B4D8',
                         fontWeight: 700,
                         fontSize: '15px',
                         cursor: 'pointer',
@@ -861,9 +861,9 @@ const Customweb = () => {
                   height: '40px',
                   minWidth: '40px',
                   borderRadius: '50%',
-                  border: '1.5px solid #630330',
-                  backgroundColor: '#f2a7c8',
-                  color: '#630330',
+                  border: '1.5px solid #00B4D8',
+                  backgroundColor: '#dff6fc',
+                  color: '#00B4D8',
                   fontSize: '24px',
                   cursor: 'pointer',
                   lineHeight: 1,
@@ -1029,7 +1029,7 @@ const Customweb = () => {
               style={{
                 position: 'relative',
                 zIndex: 4,
-                backgroundColor: '#630330',
+                backgroundColor: '#00B4D8',
                 borderRadius: '32px',
                 borderBottomRightRadius: '0px',
                 padding: '40px 50px',

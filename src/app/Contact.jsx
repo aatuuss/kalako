@@ -114,11 +114,11 @@ const Contact = () => {
         .form-group-ref input:focus, 
         .form-group-ref textarea:focus {
           outline: none;
-          border-color: #630330;
+          border-color: #00B4D8;
         }
 
         .btn-kirim {
-          background-color: #630330;
+          background-color: #00B4D8;
           color: white;
           padding: 12px 35px;
           border-radius: 10px;
@@ -131,7 +131,7 @@ const Contact = () => {
         }
 
         .btn-kirim:hover {
-          background-color: #4a0224;
+          background-color: #0077B6;
         }
 
         /* The Office Section */
@@ -209,7 +209,7 @@ const Contact = () => {
           right: 0px;
           width: 90%;
           height: 75%;
-          background: #630330;
+          background: #00B4D8;
           border-radius: 50% 10% 20% 50% / 50% 10% 20% 50%;
           z-index: 1;
         }
@@ -239,7 +239,7 @@ const Contact = () => {
         .vector-dot {
           width: 4px;
           height: 4px;
-          background-color: #630330;
+          background-color: #00B4D8;
           border-radius: 50%;
         }
 
@@ -249,7 +249,7 @@ const Contact = () => {
           left: -150px;
           width: 500px;
           height: 500px;
-          border: 1px solid rgba(99, 3, 48, 0.05);
+          border: 1px solid rgba(0, 180, 216, 0.05);
           border-radius: 50%;
           z-index: 0;
         }
