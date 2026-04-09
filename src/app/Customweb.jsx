@@ -618,7 +618,7 @@ const Customweb = () => {
                 border: '8px solid rgba(255, 255, 255, 0.3)',
               }}
             >
-              <div style={{ flex: 1, backgroundColor: '#f9f9f9', position: 'relative' }}>
+              <div style={{ flex: 1, backgroundColor: '#03045E', position: 'relative' }}>
                 <img
                   src="/img/custom.png"
                   alt="App Dashboard Preview"
@@ -1017,7 +1017,7 @@ const Customweb = () => {
                 bottom: '30px',
                 width: '15%',
                 height: '30px',
-                backgroundColor: '#ffb2d9',
+                backgroundColor: '#03045E',
                 borderTopLeftRadius: '32px',
                 borderBottomRightRadius: '32px',
                 zIndex: 7,
@@ -1066,3 +1066,4 @@ const Customweb = () => {
 };
 
 export default Customweb;
+
