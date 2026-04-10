@@ -35,9 +35,9 @@ const Navbar = () => {
       path: '/service',
       isDropdown: true,
       subItems: [
-        { label: 'Web & App Development', path: '/website', icon: '💻' },
-        { label: 'Enterprise Resource Planning (ERP)', path: '/service', icon: '📊' },
-        { label: 'Custom Software Development', path: '/cutsomweb', icon: '🚀' }
+        { label: 'Web & App Development', path: '/website' },
+        { label: 'Enterprise Resource Planning (ERP)', path: '/service' },
+        { label: 'Custom Software Development', path: '/cutsomweb' }
       ]
     },
     { name: 'contact', label: t('Kontak', 'Contact'), path: '/contact' }
@@ -256,20 +256,32 @@ const Navbar = () => {
         }
 
         .dropdown-icon {
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #f7fafc;
-          border-radius: 10px;
-          font-size: 18px;
-          transition: all 0.3s ease;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          font-size: 12px;
+          font-weight: 700;
+          color: #64748b;
+          transition: all 0.2s ease;
         }
 
         .dropdown-item:hover .dropdown-icon {
-          background: white;
-          transform: scale(1.1) rotate(5deg);
+          background: #ffffff;
+          border-color: #cbd5e1;
+          color: #475569;
+        }
+
+        .dropdown-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 999px;
+          background-color: #94a3b8;
+          display: inline-block;
         }
 
         .mobile-submenu {
@@ -401,7 +413,9 @@ const Navbar = () => {
                     <div className="dropdown-menu">
                       {l.subItems.map((sub, idx) => (
                         <Link key={idx} to={sub.path} className="dropdown-item">
-                          <div className="dropdown-icon">{sub.icon}</div>
+                          <div className="dropdown-icon">
+                            <span className="dropdown-dot"></span>
+                          </div>
                           <span style={{ flex: 1 }}>{sub.label}</span>
                           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -536,7 +550,16 @@ const Navbar = () => {
                             setIsServiceSubMenuOpen(false)
                           }}
                         >
-                          <span style={{ fontSize: '18px' }}>{sub.icon}</span>
+                          <span
+                            style={{
+                              width: '8px',
+                              height: '8px',
+                              borderRadius: '999px',
+                              backgroundColor: '#94a3b8',
+                              display: 'inline-block',
+                              flexShrink: 0
+                            }}
+                          ></span>
                           {sub.label}
                         </Link>
                       ))}
