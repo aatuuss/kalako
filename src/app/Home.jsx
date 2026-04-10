@@ -14,6 +14,7 @@ const Home = () => {
     web: {
       key: 'web',
       tabLabel: 'Web & App Development',
+      learnMorePath: '/website',
       title: t('Pengembangan Web & Aplikasi', 'Web & Application Development'),
       image: '/img/web.jpg',
       imageAlt: 'Web Development',
@@ -24,6 +25,7 @@ const Home = () => {
     erp: {
       key: 'erp',
       tabLabel: 'Enterprise Resource Planning',
+      learnMorePath: '/service',
       title: t('Pengembangan Sistem ERP', 'ERP System Development'),
       image: '/img/erpsystem.jpg',
       imageAlt: 'ERP System Development',
@@ -34,6 +36,7 @@ const Home = () => {
     custom: {
       key: 'custom',
       tabLabel: 'Custom Software Development',
+      learnMorePath: '/customweb',
       title: t('Pengembangan Software Kustom', 'Custom Software Development'),
       image: '/img/custom.jpg',
       imageAlt: 'Custom Software Development',
@@ -88,10 +91,10 @@ const Home = () => {
   const featureData = {
     dashboard: {
       key: 'dashboard',
-      tabLabel: t('Dashboard Analitik', 'Analytics Dashboard'),
+      tabLabel: t('Dashboard Analisis', 'Analytics Dashboard'),
       title: t('Pantau Performa Bisnis Secara Real-Time dalam Satu Dashboard.', 'Monitor business performance in real-time in one dashboard.'),
       image: '/img/dashboard.png',
-      imageAlt: 'Dashboard Analytics',
+      imageAlt: 'Dashboard Analisis',
       desc1: t('Satu sistem terintegrasi untuk memonitor stok, penjualan, customer, pemasukan, hingga riwayat transaksi secara akurat dan terpusat.', 'An integrated system to monitor stock, sales, customers, revenue, and transaction history accurately in one place.'),
       points: [
         t('Dilengkapi Grafik & Laporan Otomatiss', 'Equipped with charts & automated reports'),
@@ -697,7 +700,7 @@ const Home = () => {
               maxWidth: '520px',
               fontWeight: 400
             }}>
-              {t('Sederhanakan kompleksitas bisnis Anda dengan solusi Enterprise Resource Planning (ERP) mutakhir yang dirancang untuk skala dan efisiensi jangka panjang.', 'Simplify your business complexity with advanced Enterprise Resource Planning (ERP) solutions designed for scale and long-term efficiency.')}
+              {t('Sederhanakan kompleksitas bisnis Anda dengan solusi Enterprise Resource Planning (ERP) canggih yang dirancang untuk skalabilitas dan efisiensi jangka panjang.', 'Simplify your business complexity with advanced Enterprise Resource Planning (ERP) solutions designed for scale and long-term efficiency.')}
             </p>
             <div className="btn-group animate-fade-in-up delay-300" style={{ display: 'flex', gap: '18px' }}>
               <button
@@ -789,7 +792,11 @@ const Home = () => {
                 ))}
               </div>
 
-              <button className="btn-primary" style={{ padding: '12px 28px', fontSize: '14.5px' }}>
+              <button
+                className="btn-primary"
+                style={{ padding: '12px 28px', fontSize: '14.5px' }}
+                onClick={() => navigate(activeCard.learnMorePath)}
+              >
                 {t('Pelajari Selengkapnya', 'Learn More')}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </button>

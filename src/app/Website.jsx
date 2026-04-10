@@ -592,7 +592,7 @@ const Website = () => {
 								}}
 							>
 								<img
-									src="/img/contact.png" // Gunakan dummy yang ada
+									src="/img/contact.jpg" // Gunakan dummy yang ada
 									alt="Website Maintenance"
 									style={{
 										position: 'absolute',
@@ -887,7 +887,7 @@ const Website = () => {
 					<div
 						className="website-cta-visual"
 						style={{
-							flex: '0 0 320px',
+							flex: '0 0 360px',
 							position: 'relative',
 							display: 'flex',
 							justifyContent: 'flex-end',
@@ -902,8 +902,8 @@ const Website = () => {
 								right: '0',
 								top: '50%',
 								transform: 'translateY(-50%)',
-								width: '220px', // Diperkecil agar masuk ke dalam card
-								height: '220px',
+								width: '200px',
+								height: '200px',
 								backgroundColor: '#CAF0F8',
 								borderRadius: '50%',
 								zIndex: 1,
@@ -917,10 +917,10 @@ const Website = () => {
 							alt="Customer Service / User"
 							style={{
 								position: 'absolute',
-								right: '25px',
-								top: '-8%', // Naikkan posisi gambar agar lebih ke atas
-								width: '150px',
-								height: '130%', // Sesuaikan agar pas di atas lingkaran
+								right: '12px',
+								top: '-23%',
+								width: '195px',
+								height: '185%',
 								objectFit: 'cover',
 								objectPosition: 'center',
 								zIndex: 2,

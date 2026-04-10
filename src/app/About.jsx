@@ -280,7 +280,7 @@ const About = () => {
                       fontWeight: 500,
                       letterSpacing: '0.2px'
                     }}>
-                      {t('"Menghubungkan proses manajerial yang rumit ke dalam satu sistem interface cerdas yang elegan dan mudah dikendalikan."', '"Connecting complex managerial processes into one smart, elegant, and easy-to-control interface system."')}
+                      {t('"Menghubungkan proses manager yang rumit ke dalam satu sistem interface cerdas yang elegan dan mudah dikendalikan."', '"Connecting complex managerial processes into one smart, elegant, and easy-to-control interface system."')}
                     </p>
                   </div>
                 </div>
